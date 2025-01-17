@@ -15,13 +15,27 @@ const posts = (await getCollection('blog')).sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+				max-width: calc(100% - 2em);
+			}
+			img {
+				width: 100%;
+				display: block;
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+				aspect-ratio: 2;
+				object-fit: cover;
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section>
                 <img alt="Идут работы" src="/work-in-progress.jpg" />
-				<h2>Скоро тут всё будет, пока идут работы</h2>
+				<h2 class="text-center">Скоро тут всё будет, пока идут работы</h2>
 			</section>
 		</main>
 		<Footer />

@@ -96,6 +96,7 @@ function TimeZoneGame() {
     return Math.round((correctGuesses / gameLocations.length) * 100);
   };
 
+  // Going to restore it later when I'm sure that all the translations are correct
   const LanguageSelector = () => (
     <div className="absolute top-4 right-4 flex items-center gap-2">
       <Globe className="w-5 h-5 text-gray-600" />
@@ -126,7 +127,6 @@ function TimeZoneGame() {
   if (gameComplete) {
     return (
       <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-        <LanguageSelector />
         <div className="bg-white rounded-lg shadow-xl p-8 max-w-md w-full">
           <div className="text-center">
             <Clock className="w-16 h-16 mx-auto text-blue-500 mb-4" />
@@ -177,7 +177,6 @@ function TimeZoneGame() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <LanguageSelector />
       <div className="bg-white rounded-lg shadow-xl max-w-xl w-full overflow-hidden">
         <img 
           src={location.image} 
@@ -185,7 +184,7 @@ function TimeZoneGame() {
           className="w-full h-64 object-cover"
         />
         <div className="p-6">
-          <h1 className="text-center text-2xl font-bold">{location.translations.city[language]}</h1>
+          <h1 className="text-center text-2xl font-bold mb-0">{location.translations.city[language]}</h1>
           <p className="text-center text-gray-600 mb-4">{location.translations.country[language]}</p>
           
           {!showAnswer ? (
