@@ -1,0 +1,55 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav>
+		<div class="logo">
+			<a href="/">
+				<img width={209} height={37} alt="На главную" src="/encyklop-logo-min.png" />
+			</a>
+		</div>
+		<div class="internal-links">
+			<HeaderLink href="/blog">Статьи</HeaderLink>
+			<HeaderLink href="/videos">Видео</HeaderLink>
+			<HeaderLink href="/games">Игры</HeaderLink>
+			<HeaderLink href="/about">Обо мне</HeaderLink>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: white;
+		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav a {
+		padding: 1em 0.5em;
+		color: var(--black);
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+	}
+	nav a.active {
+		text-decoration: none;
+		border-bottom-color: var(--accent);
+	}
+	nav .logo {
+		margin: 0;
+		font-size: 1em;
+	}
+	nav .logo a,
+	nav .logo a.active {
+		padding-top: 0;
+		padding-bottom: 0;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+</style>
