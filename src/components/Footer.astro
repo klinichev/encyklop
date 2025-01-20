@@ -4,13 +4,13 @@ const today = new Date();
 
 <footer>
 	<div class="footer__top">
-		<a href="https://www.patreon.com/encyklop" target="_blank" class="text-white text-base font-medium text-center inline-flex items-center bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-3 me-2 mb-2">
+		<a href="https://www.patreon.com/encyklop" target="_blank" class="text-white text-base font-medium text-center inline-flex items-center justify-center bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-5 py-3">
 			<svg class="w-4 h-4 text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 436 476">
 				<path d="M436 143c-.084-60.778-47.57-110.591-103.285-128.565C263.528-7.884 172.279-4.649 106.214 26.424 26.142 64.089.988 146.596.051 228.883c-.77 67.653 6.004 245.841 106.83 247.11 74.917.948 86.072-95.279 120.737-141.623 24.662-32.972 56.417-42.285 95.507-51.929C390.309 265.865 436.097 213.011 436 143Z"></path>
 			</svg>
 			Поддержать на Patreon'е
 		</a>
-		<a href="https://boosty.to/encyklop" target="_blank" class="text-white text-base font-medium text-center inline-flex items-center bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 rounded-lg px-5 py-3 me-2 mb-2">
+		<a href="https://boosty.to/encyklop" target="_blank" class="text-white text-base font-medium text-center inline-flex items-center justify-center bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 rounded-lg px-5 py-3">
 			<svg class="w-4 h-4 text-white me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 70 86">
 				<path d="M16.774 0 2.228 51.282l-.521 1.804c-5.01 17.634.713 32.539 21.12 32.77q3.92-10.029 10.85-27.687H22.615l11.853-41.983q.044-.15.116-.287L39.098 0zm33.041 46.363L22.908 85.857h.415c19.881 0 40.302-14.991 45.348-32.776 4.699-16.53-3.294-30.2-20.34-32.017l-9.932 25.299z"/>
 			</svg>
@@ -38,7 +38,14 @@ const today = new Date();
 <style>
 	.footer__top {
 		height: 100px;
+		display: flex;
+		gap: 16px;
+		justify-content: center;
+		align-items: center;
 		text-align: center;
+	}
+	.footer__top a {
+		max-width: 300px;
 	}
 	.footer__top a:hover, 
 	.footer__top a:active {
@@ -83,5 +90,15 @@ const today = new Date();
 		color: #fff;
 		font-size: 8px;
 		line-height: 12px;
+	}
+	@media (max-width: 720px) {
+		.footer__top {
+			width: max-content;
+			height: auto;
+			margin: 0 auto;
+			padding-bottom: 32px;
+			flex-direction: column;
+			align-items: stretch;
+		}
 	}
 </style>
