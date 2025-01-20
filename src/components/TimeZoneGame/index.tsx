@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { Clock, RotateCcw, Globe } from 'lucide-react';
 import { locations } from './data/locations';
 import { translations } from './data/translations';
@@ -25,6 +25,9 @@ function TimeZoneGame() {
   const [gameComplete, setGameComplete] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
+  const hoursInputRef = useRef<HTMLInputElement>(null);
+  const minutesInputRef = useRef<HTMLInputElement>(null);
+
   // Initialize game locations only on client side
   useEffect(() => {
     setIsClient(true);
@@ -47,6 +50,30 @@ function TimeZoneGame() {
     setResults([]);
     setGameComplete(false);
   }, []);
+
+  const handleHoursChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (value === '' || (parseInt(value) >= 0 && parseInt(value) <= 23)) {
+      setHours(value);
+      // Auto-focus minutes input when two digits are entered
+      if (value.length === 2 && minutesInputRef.current) {
+        minutesInputRef.current.focus();
+      }
+    }
+  };
+
+  const handleMinutesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (value === '' || (parseInt(value) >= 0 && parseInt(value) <= 59)) {
+      setMinutes(value);
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && hours && minutes) {
+      checkTime();
+    }
+  };
 
   const checkTime = () => {
     const location = gameLocations[currentLocation];
@@ -79,6 +106,9 @@ function TimeZoneGame() {
       setMinutes('');
       setAttempts(0);
       setShowAnswer(false);
+      if (hoursInputRef.current) {
+        hoursInputRef.current.focus();
+      }
     }
   };
 
@@ -206,22 +236,26 @@ function TimeZoneGame() {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">{t.hours}</label>
                   <input
+                    ref={hoursInputRef}
                     type="number"
                     min="0"
                     max="23"
                     value={hours}
-                    onChange={(e) => setHours(e.target.value)}
+                    onChange={handleHoursChange}
+                    onKeyPress={handleKeyPress}
                     className="w-20 px-3 py-2 border rounded-md text-center"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">{t.minutes}</label>
                   <input
+                    ref={minutesInputRef}
                     type="number"
                     min="0"
                     max="59"
                     value={minutes}
-                    onChange={(e) => setMinutes(e.target.value)}
+                    onChange={handleMinutesChange}
+                    onKeyPress={handleKeyPress}
                     className="w-20 px-3 py-2 border rounded-md text-center"
                   />
                 </div>
