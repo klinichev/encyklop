@@ -1,0 +1,42 @@
+---
+interface Props {
+	status: number;
+    isLong: boolean;
+}
+
+const statusOptions = {
+    1: 'Проросток',
+    2: 'Саженец',
+    3: 'Куст'
+}
+
+const { status, isLong } = Astro.props;
+---
+
+<div class="status">
+    <svg class=`green-${status}` xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <rect x="3" y="3" width="2" height="10"/>
+        <rect x="7" y="3" width="2" height="10"/>
+        <rect x="11" y="3" width="2" height="10"/>        
+    </svg>
+    {isLong && (
+        <div>{statusOptions[status]}</div>
+    )}
+</div>
+<style>
+    .status {
+        display: flex;
+        gap: 8px;
+        color: rgb(var(--gray));
+    }
+    .status svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: rgb(var(--gray));
+    }
+    :is(.green-1, .green-2, .green-3) rect:first-child, 
+    :is(.green-2, .green-3) rect:nth-child(2), 
+    .green-3 rect:nth-child(3) {
+        fill: #00dd00;
+    }
+</style>
