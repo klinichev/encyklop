@@ -50,17 +50,18 @@ const isGif = typeof src === "string" && src.toLowerCase().endsWith(".gif");
 					src={typeof imageSrc === "string" ? src : imageSrc.src}
 					alt={alt}
 					class="styled-image"
-					loading="eager"
+					loading="lazy"
 				/>
 			) : (
 				<Picture
 					src={imageSrc as ImageMetadata}
 					alt={alt}
-					formats={["avif", "webp", "jpg"]}
 					width={typeof width === "number" ? width : parseInt(width)}
 					class="styled-image"
-					loading="eager"
+					loading="lazy"
 					decoding="async"
+					densities={[2]}
+					quality="max"
 				/>
 			)
 		}

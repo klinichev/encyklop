@@ -2,7 +2,7 @@
 title: 'Монпелье'
 description: 'Все города Франции похожи друг на друга, но Монпелье невозможно ни с чем перепутать...'
 pubDate: 'Jan 17 2025'
-heroImage: '/montpellier-1.jpg'
+heroImage: '/public/images/montpellier-1.jpg'
 status: 1
 ---
 

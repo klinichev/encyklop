@@ -2,7 +2,7 @@
 title: 'Альби'
 description: 'Да, альбигойцы именно отсюда.'
 pubDate: 'Jan 17 2025'
-heroImage: '/albi-1.jpg'
+heroImage: '/public/images/albi-1.jpg'
 status: 1
 ---
 

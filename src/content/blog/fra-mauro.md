@@ -2,7 +2,7 @@
 title: 'Карта Фра Мауро'
 description: 'Карта 1459 года, незадолго до Великих географических открытий'
 pubDate: 'Jan 25 2025'
-heroImage: '/fra-mauro-1.jpg'
+heroImage: '/public/images/fra-mauro-1.jpg'
 status: 1
 ---
 

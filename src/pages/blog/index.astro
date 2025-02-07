@@ -5,8 +5,11 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import Status from '../../components/Status.astro';
+import { Picture } from 'astro:assets';
 
-const posts = await getCollection('blog');
+const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
 ---
 
 <!doctype html>
@@ -84,7 +87,15 @@ const posts = await getCollection('blog');
 						posts.map((post) => (
 							<li>
 								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
+									<Picture 
+										width={720}
+										height={360}
+										src={post.data.heroImage}
+										alt="" 
+										loading="eager" 
+										densities={[2]} 
+										quality="max"
+									/>
 									<div class="title">
 										<h4>{post.data.title}</h4>
 										{

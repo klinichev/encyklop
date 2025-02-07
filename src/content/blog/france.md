@@ -2,7 +2,7 @@
 title: 'Франция'
 description: ''
 pubDate: 'Jan 17 2025'
-heroImage: '/france-1.webp'
+heroImage: '/public/images/france-1.webp'
 status: 1
 ---
 
