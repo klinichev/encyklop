@@ -10,6 +10,15 @@ import { Picture } from 'astro:assets';
 const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
+
+const actionCard = {
+	active: true,
+	title: 'Сколько времени в Токио?',
+	desc: 'Игра на знание часовых поясов',
+	anchorText: 'Играть',
+	anchorLink: '/games/time-zones',
+	image: 'https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=80&w=1200'
+}
 ---
 
 <!doctype html>
@@ -30,6 +39,14 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 			}
 			ul li {
 				width: calc(33.3% - 1.34rem);
+				order: 3;
+			}
+			ul :is(li:first-child, li:nth-child(2), li:nth-child(3)) {
+				order: 1;
+			}
+			ul li:last-child {
+				width: 100%;
+				order: 2;
 			}
 			ul li * {
 				text-decoration: none;
@@ -54,6 +71,7 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 			}
 			.title h4 {
 				margin-bottom: 0;
+				text-align: left;
 			}
 			ul li a:hover h4 {
 				color: var(--accent);
@@ -61,19 +79,50 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
+			ul li:last-child > div {
+				position: relative;
+				overflow: hidden;
+				border-radius: 12px;
+			}
+			ul li:last-child img {
+				aspect-ratio: auto;
+    			position: absolute;
+				transform: translateY(-40%);
+			}
+			ul li:last-child .general-info {
+				position: relative;
+				z-index: 2;
+				padding: 1em;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				gap: 1em;
+				background-color: rgba(0, 0, 0, 0.65);
+			}
+			ul li:last-child .general-info__inner :is(h3, div) {
+				margin-bottom: 0;
+				color: #fff;
+				text-align: left;
+			}
+			ul li:last-child .general-info :is(a:hover, a:active) {
+				color: #fff;
+			}
 			@media (max-width: 720px) {
 				ul {
-					gap: 0.5em;
+					gap: 1.5em;
 				}
 				ul li {
 					width: 100%;
 					text-align: center;
 				}
-				ul li:first-child {
-					margin-bottom: 0;
+				ul li:last-child img {
+					max-width: 200%;
 				}
-				ul li:first-child .title {
-					font-size: 1.563em;
+			}
+			@media (max-width: 360px) {
+				ul li:last-child img {
+					max-width: 400%;
 				}
 			}
 		</style>
@@ -91,7 +140,6 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 					{
 						posts.map((post) => (
 							<li>
-							{/* TODO: can I have a banner for my game and YT here thank you */}
 								<a href={`/blog/${post.slug}/`}>
 									<Picture 
 										width={720}
@@ -113,6 +161,24 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 								</a>
 							</li>
 						))
+					}
+					{
+						actionCard.active && (
+							<li>
+								<div>
+									<img src={actionCard.image} />
+									<div class="general-info">
+										<div class="general-info__inner">
+											<h3>{actionCard.title}</h3>
+											<div>{actionCard.desc}</div>
+										</div>
+										<a href={actionCard.anchorLink} class="text-white text-base font-medium text-center inline-flex items-center justify-center bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 rounded-lg px-9 py-3">
+											{actionCard.anchorText}
+										</a>
+									</div>
+								</div>
+							</li>
+						)
 					}
 				</ul>
 			</section>
