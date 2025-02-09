@@ -1,0 +1,117 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+
+const actionCards = [{
+	active: true,
+	title: 'Сколько времени в Токио?',
+	desc: 'Игра на знание часовых поясов',
+	anchorText: 'Играть',
+	anchorLink: '/games/time-zones',
+	image: 'https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=60&w=1200'
+}];
+---
+
+<!doctype html>
+<html lang="ru">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			ul li {
+				width: 100%;
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li > div {
+				position: relative;
+				overflow: hidden;
+				border-radius: 12px;
+			}
+			ul li img {
+				aspect-ratio: auto;
+    			position: absolute;
+				transform: translateY(-40%);
+			}
+			ul li .general-info {
+				position: relative;
+				z-index: 2;
+				padding: 1em;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				gap: 1em;
+				background-color: rgba(0, 0, 0, 0.65);
+			}
+			ul li .general-info__inner :is(h3, div) {
+				margin-bottom: 0;
+				color: #fff;
+				text-align: left;
+			}
+			ul li .general-info :is(a:hover, a:active) {
+				color: #fff;
+			}
+			@media (max-width: 720px) {
+				ul {
+					gap: 1.5em;
+				}
+				ul li:last-child img {
+					max-width: 200%;
+				}
+			}
+			@media (max-width: 360px) {
+				ul li:last-child img {
+					max-width: 400%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="text-center mb-8">
+				<h1 class="font-display">Игры</h1>
+			</section>
+			<section>
+				<ul>
+					{
+						actionCards.map((actionCard) => (
+                            actionCard.active && (
+                                <li>
+                                    <div>
+                                        <img src={actionCard.image} />
+                                        <div class="general-info">
+                                            <div class="general-info__inner">
+                                                <h3>{actionCard.title}</h3>
+                                                <div>{actionCard.desc}</div>
+                                            </div>
+                                            <a href={actionCard.anchorLink} class="text-white text-base font-medium text-center inline-flex items-center justify-center bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 rounded-lg px-9 py-3">
+                                                {actionCard.anchorText}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            )
+						))
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

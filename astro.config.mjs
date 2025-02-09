@@ -10,7 +10,7 @@ import react from "@astrojs/react";
 export default defineConfig({
 	site: 'https://encyklop.com',
 	integrations: [tailwind(), react(), mdx(), sitemap()],
-	redirects: {
-		'/games': '/games/time-zones'
-	}
+	// redirects: {
+	// 	'/games': '/games/time-zones'
+	// }
 });
