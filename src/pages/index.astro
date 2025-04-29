@@ -11,6 +11,7 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
 
+//TODO collect and store data for banners separately
 const actionCard = {
 	active: true,
 	title: 'Сколько времени в Токио?',
