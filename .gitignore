@@ -24,4 +24,5 @@ pnpm-debug.log*
 .idea/
 
 # sandbox
+src/content/sandbox/
 src/content/blog/sandbox/
