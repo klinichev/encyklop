@@ -54,7 +54,12 @@ const actionCard = {
 				text-decoration: none;
 				transition: 0.2s ease;
 			}
+			ul li picture {
+				display: block;
+				width: 100%;
+			}
 			ul li img {
+				width: 100%;
 				margin-bottom: 0.5rem;
 				border-radius: 12px;
 				aspect-ratio: 2;
@@ -87,6 +92,7 @@ const actionCard = {
 				border-radius: 12px;
 			}
 			ul li:last-child img {
+				width: auto;
 				aspect-ratio: auto;
     			position: absolute;
 				transform: translateY(-40%);
@@ -144,8 +150,8 @@ const actionCard = {
 							<li>
 								<a href={`/blog/${post.slug}/`}>
 									<Picture 
-										width={720}
-										height={360}
+										width={286}
+										height={143}
 										src={post.data.heroImage}
 										alt="" 
 										loading="eager" 
