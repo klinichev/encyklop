@@ -1,11 +1,18 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+
+const heroImage = {
+	src: "/images/me.jpg",
+	format: "jpg" as const,
+	width: 960,
+	height: 480,
+}
 ---
 
 <Layout
 	title="Об авторе"
 	description=""
-	heroImage="/images/me.jpg"
+	heroImage={heroImage}
 >
 	<p>
 		Меня зовут Арсений Клиничев, я могу быть вам известен как мозг и голос канала 
