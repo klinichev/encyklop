@@ -7,6 +7,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 //TODO collect and store data about games separately
 const actionCards = [{
 	active: true,
+	title: 'Что ближе к Парижу: Рим или Барселона?',
+	desc: 'Проверка ориентации в пространстве',
+	anchorText: 'Играть',
+	anchorLink: '/games/distance',
+	image: 'https://images.unsplash.com/photo-1606225278453-eba097f60fc3?auto=format&fit=crop&q=60&w=1200'
+},
+{
+	active: true,
 	title: 'Сколько времени в Токио?',
 	desc: 'Игра на знание часовых поясов',
 	anchorText: 'Играть',
@@ -70,6 +78,10 @@ const actionCards = [{
 			@media (max-width: 720px) {
 				ul {
 					gap: 1.5em;
+				}
+				ul li:first-child img {
+					max-width: 300%;
+					transform: translateX(-30%) translateY(-40%);
 				}
 				ul li:last-child img {
 					max-width: 200%;

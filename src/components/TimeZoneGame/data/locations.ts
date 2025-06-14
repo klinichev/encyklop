@@ -247,7 +247,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Kolkata",
-    image: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&q=80&w=1200",
+    image: "https://images.unsplash.com/photo-1660145416818-b9a2b1a1f193?auto=format&fit=crop&q=80&w=1200",
   },
   {
     id: 13,

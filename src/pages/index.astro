@@ -14,11 +14,11 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 //TODO collect and store data for banners separately
 const actionCard = {
 	active: true,
-	title: 'Сколько времени в Токио?',
-	desc: 'Игра на знание часовых поясов',
+	title: 'Что ближе к Парижу: Рим или Барселона?',
+	desc: 'Проверка ориентации в пространстве',
 	anchorText: 'Играть',
-	anchorLink: '/games/time-zones',
-	image: 'https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&q=60&w=1200'
+	anchorLink: '/games/distance',
+	image: 'https://images.unsplash.com/photo-1606225278453-eba097f60fc3?auto=format&fit=crop&q=60&w=1200'
 }
 ---
 
@@ -125,12 +125,8 @@ const actionCard = {
 					text-align: center;
 				}
 				ul li:last-child img {
-					max-width: 200%;
-				}
-			}
-			@media (max-width: 360px) {
-				ul li:last-child img {
-					max-width: 400%;
+					max-width: 300%;
+					transform: translateX(-30%) translateY(-40%);
 				}
 			}
 		</style>
