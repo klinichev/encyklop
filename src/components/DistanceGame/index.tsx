@@ -7,7 +7,6 @@ import GameScreen from './components/GameScreen';
 import DistanceGuessScreen from './components/DistanceGuessScreen';
 import RoundResult from './components/RoundResult';
 import EndScreen from './components/EndScreen';
-import './index.css';
 
 function DistanceGame() {
   const { gameState, selectHomeCity, selectCustomCity, makeGuess, submitDistanceGuess, nextRound, restartGame } = useGameState();
