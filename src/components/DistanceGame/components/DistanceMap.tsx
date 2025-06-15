@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapContainer, TileLayer, Polyline, CircleMarker, Popup } from 'react-leaflet';
 import type { City } from '../types';
-import 'leaflet/dist/leaflet.css';
+import './leaflet.css';
 
 interface DistanceMapProps {
   homeCity: City;
