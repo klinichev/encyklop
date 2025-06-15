@@ -274,12 +274,12 @@ export const cities: City[] = [
     imageUrl: "https://images.unsplash.com/photo-1664602078796-68ee76b3fc59?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    id: "mumbai",
-    name: "Мумбаи",
+    id: "delhi",
+    name: "Дели",
     country: "Индия",
-    latitude: 19.0760,
-    longitude: 72.8777,
-    imageUrl: "https://images.unsplash.com/photo-1660145416818-b9a2b1a1f193?auto=format&fit=crop&q=80&w=1200"
+    latitude: 28.6139,
+    longitude: 77.2089,
+    imageUrl: "https://images.unsplash.com/photo-1580188712482-63ce8922d28c?auto=format&fit=crop&q=80&w=1200"
   },
   {
     id: "zanzibar",

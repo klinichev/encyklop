@@ -12,7 +12,14 @@
 }
 
 .leaflet-container {
+  height: 200px;
   z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .leaflet-container {
+      height: 400px;
+  }
 }
 
 .leaflet-popup-content-wrapper {
