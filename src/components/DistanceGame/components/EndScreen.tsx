@@ -58,22 +58,17 @@ const EndScreen: React.FC<EndScreenProps> = ({
         <h2 className="text-2xl md:text-3xl font-bold mb-2">{feedback.title}</h2>
         <p className="text-gray-600 mb-6">{feedback.message}</p>
 
-        {distanceMode ? (
-          <div className="mb-8">
-            <p className="text-gray-500 mb-2">Вы набрали</p>
-            <div className="text-5xl font-bold text-blue-600 mb-2">
-              {score}
-            </div>
+        <div className="mb-8">
+          <p className="text-gray-500 mb-2">Вы набрали</p>
+          <div className="text-5xl font-bold text-blue-600 mb-2">
+            {score}
+          </div>
+          {distanceMode ? (
             <p className="text-gray-500">очков в усложнённом режиме игры</p>
-          </div>
-        ) : (
-          <div className="mb-8">
-            <div className="text-5xl font-bold text-blue-600 mb-2">
-              {normalizedScore}/{totalRounds}
-            </div>
-            <p className="text-gray-500">правильных ответов</p>
-          </div>
-        )}
+          ) : (
+            <p className="text-gray-500">очков</p>
+          )}
+        </div>
         
         <div className="w-full bg-gray-200 rounded-full h-4 mb-6">
           <div 
