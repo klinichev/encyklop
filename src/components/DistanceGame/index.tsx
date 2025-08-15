@@ -16,7 +16,6 @@ function DistanceGame() {
   // Update page title
   useEffect(() => {
     setIsClient(true);
-    document.title = "Расстояния";
   }, []);
 
   // Show loading state until client-side hydration is complete
