@@ -38,7 +38,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Tokyo",
-    image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1540959733332-eab4deabeeaf.avif",
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Europe/Paris",
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1502602898657-3e91760cbb34.avif",
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "America/New_York",
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1496442226666-8d4d0e62e6e9.avif",
   },
   {
     id: 4,
@@ -95,7 +95,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Australia/Sydney",
-    image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1506973035872-a4ec16b8e8d9.avif",
   },
   {
     id: 5,
@@ -114,7 +114,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Dubai",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1512453979798-5ea266f8880c.avif",
   },
   {
     id: 6,
@@ -133,7 +133,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "America/Sao_Paulo",
-    image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1483729558449-99ef09a8c325.avif",
   },
   {
     id: 7,
@@ -152,7 +152,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Africa/Johannesburg",
-    image: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1580060839134-75a5edca2e99.avif",
   },
   {
     id: 8,
@@ -171,7 +171,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Singapore",
-    image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1525625293386-3f8f99389edd.avif",
   },
   {
     id: 9,
@@ -190,7 +190,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Europe/London",
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1513635269975-59663e0ac1ad.avif",
   },
   {
     id: 10,
@@ -209,7 +209,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Europe/Moscow",
-    image: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1513326738677-b964603b136d.avif",
   },
   {
     id: 11,
@@ -228,7 +228,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "America/Vancouver",
-    image: "https://images.unsplash.com/photo-1559511260-66a654ae982a?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1559511260-66a654ae982a.avif",
   },
   {
     id: 12,
@@ -247,7 +247,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Kolkata",
-    image: "https://images.unsplash.com/photo-1660145416818-b9a2b1a1f193?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1660145416818-b9a2b1a1f193.avif",
   },
   {
     id: 13,
@@ -266,7 +266,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Europe/Istanbul",
-    image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1524231757912-21f4fe3a7200.avif",
   },
   {
     id: 14,
@@ -285,7 +285,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "America/Mexico_City",
-    image: "https://images.unsplash.com/photo-1518659526054-190340b32735?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1518659526054-190340b32735.avif",
   },
   {
     id: 15,
@@ -304,7 +304,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Bangkok",
-    image: "https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1508009603885-50cf7c579365.avif",
   },
   {
     id: 16,
@@ -323,7 +323,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Africa/Cairo",
-    image: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1572252009286-268acec5ca0a.avif",
   },
   {
     id: 17,
@@ -342,7 +342,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Pacific/Auckland",
-    image: "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1507699622108-4be3abd695ad.avif",
   },
   {
     id: 18,
@@ -361,7 +361,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Seoul",
-    image: "https://images.unsplash.com/photo-1533577116850-9cc66cad8a9b?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1533577116850-9cc66cad8a9b.avif",
   },
   {
     id: 19,
@@ -380,7 +380,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "America/Argentina/Buenos_Aires",
-    image: "https://images.unsplash.com/photo-1706170421190-48b12aa10f5e?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1706170421190-48b12aa10f5e.avif",
   },
   {
     id: 20,
@@ -399,7 +399,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Europe/Stockholm",
-    image: "https://images.unsplash.com/photo-1509356843151-3e7d96241e11?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1509356843151-3e7d96241e11.avif",
   },
   {
     id: 21,
@@ -418,7 +418,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Kamchatka",
-    image: "https://images.unsplash.com/photo-1634745189232-469c67012923?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1634745189232-469c67012923.avif",
   },
   {
     id: 22,
@@ -437,7 +437,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Shanghai",
-    image: "https://images.unsplash.com/photo-1713173642147-30cbbdb176d5?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1713173642147-30cbbdb176d5.avif",
   },
   {
     id: 23,
@@ -456,7 +456,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "Asia/Baghdad",
-    image: "https://images.unsplash.com/photo-1709659693787-81ef6a25fa98?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1709659693787-81ef6a25fa98.avif",
   },
   {
     id: 24,
@@ -475,7 +475,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "America/Lima",
-    image: "https://images.unsplash.com/photo-1729625616173-bfc0ac7f78b7?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1729625616173-bfc0ac7f78b7.avif",
   },
   {
     id: 25,
@@ -494,7 +494,7 @@ export const locations: Location[] = [
       },
     },
     timezone: "America/Denver",
-    image: "https://images.unsplash.com/photo-1519424187720-db6d0fc5a5d2?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1519424187720-db6d0fc5a5d2.avif",
   },
   {
     id: 26,
@@ -513,6 +513,6 @@ export const locations: Location[] = [
       },
     },
     timezone: "Pacific/Honolulu",
-    image: "https://images.unsplash.com/photo-1684727906248-b36353278801?auto=format&fit=crop&q=80&w=1200",
+    image: "/gamepics/photo-1684727906248-b36353278801.avif",
   },
 ];
