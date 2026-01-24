@@ -25,6 +25,7 @@ export function initializeGameState(): GameState {
  */
 export function selectHomeCity(gameState: GameState, cityId: string, customCity?: City, distanceMode: boolean = false): GameState {
   let homeCity: City | undefined;
+  const minDistance = 30;
   
   if (customCity) {
     homeCity = customCity;
@@ -33,8 +34,12 @@ export function selectHomeCity(gameState: GameState, cityId: string, customCity?
   }
   
   if (!homeCity) return gameState;
-  
-  const playedCities = new Set<string>([cityId]);
+
+  // Exclude cities closer than 30 km
+  const closeCities = cities.filter(city => 
+    calculateDistance(homeCity.latitude, homeCity.longitude, city.latitude, city.longitude) < minDistance).map(city => city.id);
+
+  const playedCities = new Set<string>([...closeCities, cityId]);
   
   return {
     ...gameState,
