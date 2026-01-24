@@ -15,10 +15,29 @@ const DistanceMap: React.FC<DistanceMapProps> = ({
   otherCity,
   correctCity
 }) => {
+  const getNormalizer = (firstCity: City, secondCity: City) => {
+    const delta = firstCity.longitude - secondCity.longitude;
+
+    if (delta > 180) {
+      return 360;
+    }
+
+    if (delta < -180) {
+      return -360;
+    }
+      
+    return 0;
+  };
+
+  const normalizedLongitudes = {
+    guessCity: guessCity.longitude + getNormalizer(homeCity, guessCity),
+    otherCity: otherCity.longitude + getNormalizer(homeCity, otherCity),
+  }
+
   const bounds = [
     [homeCity.latitude, homeCity.longitude],
-    [guessCity.latitude, guessCity.longitude],
-    [correctCity.latitude, correctCity.longitude]
+    [guessCity.latitude, normalizedLongitudes.guessCity],
+    [otherCity.latitude, normalizedLongitudes.otherCity]
   ];
 
   return (
@@ -49,7 +68,7 @@ const DistanceMap: React.FC<DistanceMapProps> = ({
 
       {/* Guess City Marker */}
       <CircleMarker
-        center={[guessCity.latitude, guessCity.longitude]}
+        center={[guessCity.latitude, normalizedLongitudes.guessCity]}
         radius={8}
         fillColor={guessCity === correctCity ? "#22c55e" : "#64748b"}
         color="#fff"
@@ -63,7 +82,7 @@ const DistanceMap: React.FC<DistanceMapProps> = ({
 
       {/* Other City Marker */}
       <CircleMarker
-        center={[otherCity.latitude, otherCity.longitude]}
+        center={[otherCity.latitude, normalizedLongitudes.otherCity]}
         radius={8}
         fillColor={otherCity === correctCity ? "#22c55e" : "#64748b"}
         color="#fff"
@@ -79,7 +98,7 @@ const DistanceMap: React.FC<DistanceMapProps> = ({
       <Polyline
         positions={[
           [homeCity.latitude, homeCity.longitude],
-          [guessCity.latitude, guessCity.longitude]
+          [guessCity.latitude, normalizedLongitudes.guessCity]
         ]}
         color={guessCity === correctCity ? "#22c55e" : "#ef4444"}
         weight={3}
@@ -90,7 +109,7 @@ const DistanceMap: React.FC<DistanceMapProps> = ({
       <Polyline
         positions={[
           [homeCity.latitude, homeCity.longitude],
-          [otherCity.latitude, otherCity.longitude]
+          [otherCity.latitude, normalizedLongitudes.otherCity]
         ]}
         color={guessCity === correctCity ? "#22c55e" : "#ef4444"}
         weight={3}
