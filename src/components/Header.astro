@@ -10,7 +10,13 @@ import { SITE_TITLE } from '../consts';
 				<img width={209} height={37} alt="На главную" src="/encyklop-logo-min.png" />
 			</a>
 		</div>
-		<div class="internal-links">
+		<button class="menu-toggle" type="button" aria-label="Меню" aria-controls="internal-links" aria-expanded="false">
+			<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+				<path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+			</svg>
+		</button>
+		<div class="internal-links" id="internal-links">
+			<HeaderLink href="/tools">Полезности</HeaderLink>
 			<HeaderLink href="/blog">Заметки</HeaderLink>
 			<HeaderLink href="/videos">Видео</HeaderLink>
 			<HeaderLink href="/games">Игры</HeaderLink>
@@ -20,6 +26,8 @@ import { SITE_TITLE } from '../consts';
 </header>
 <style>
 	header {
+		position: relative;
+		z-index: 1100;
 		margin: 0;
 		padding: 0 1em;
 		background: white;
@@ -51,17 +59,61 @@ import { SITE_TITLE } from '../consts';
 	nav .logo a.active {
 		padding-top: 0;
 		padding-bottom: 0;
+		border-bottom: none;
 		display: flex;
 		align-items: center;
 		text-decoration: none;
 	}
+	.menu-toggle {
+		display: none;
+		padding: 0.5em;
+		color: rgb(var(--black));
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+	.menu-toggle svg {
+		display: block;
+	}
 	@media (max-width: 720px) {
 		nav {
 			max-width: 100%;
-			flex-direction: column;
+			padding: 0.5em 0;
 		}
-		nav .logo {
-			padding-top: 20px;
+		.menu-toggle {
+			display: block;
+		}
+		.internal-links {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			flex-direction: column;
+			padding: 0.5em 0;
+			background: white;
+			box-shadow: 0 8px 8px rgba(var(--black), 5%);
+		}
+		.menu-toggle[aria-expanded='true'] + .internal-links {
+			display: flex;
+		}
+		.internal-links a {
+			padding: 0.5em 1.5em;
+			border-bottom: none;
 		}
 	}
 </style>
+<script>
+	const toggle = document.querySelector('.menu-toggle');
+	const setOpen = (open: boolean) => toggle?.setAttribute('aria-expanded', String(open));
+
+	toggle?.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+	document.addEventListener('click', (event) => {
+		if (!(event.target as Element).closest('header')) setOpen(false);
+	});
+	document.addEventListener('keydown', (event) => {
+		if (event.key === 'Escape') setOpen(false);
+	});
+	// Браузер может вернуть страницу из кэша по кнопке «Назад» с открытым меню
+	window.addEventListener('pageshow', () => setOpen(false));
+</script>

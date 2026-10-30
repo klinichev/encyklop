@@ -1,0 +1,114 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const actionCards = [{
+	title: 'Гео-линейка',
+	desc: 'Линии широты и долготы и окружности нужного радиуса на карте мира',
+	anchorText: 'Открыть',
+	anchorLink: '/tools/geo-lines',
+	image: '/old-map.webp'
+}];
+---
+
+<!doctype html>
+<html lang="ru">
+	<head>
+		<BaseHead title="Полезности" description="Полезные инструменты для работы с картой мира" />
+		<style>
+			main {
+				width: 960px;
+			}
+			@media (max-width: 400px) {
+				h1 {
+					font-size: 14vw;
+				}
+			}
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			ul li {
+				width: 100%;
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li > div {
+				position: relative;
+				overflow: hidden;
+				border-radius: 12px;
+			}
+			ul li img {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				max-width: none;
+				object-fit: cover;
+				border-radius: 0;
+			}
+			ul li .general-info {
+				position: relative;
+				z-index: 2;
+				padding: 1em;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				gap: 1em;
+				background-color: rgba(0, 0, 0, 0.65);
+			}
+			ul li .general-info__inner :is(h3, div) {
+				margin-bottom: 0;
+				color: #fff;
+				text-align: left;
+			}
+			ul li .general-info :is(a:hover, a:active) {
+				color: #fff;
+			}
+			@media (max-width: 720px) {
+				ul {
+					gap: 1.5em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="text-center mb-8">
+				<h1 class="font-display">Полезности</h1>
+			</section>
+			<section>
+				<ul>
+					{
+						actionCards.map((actionCard) => (
+							<li>
+								<div>
+									<img src={actionCard.image} alt={actionCard.title} />
+									<div class="general-info">
+										<div class="general-info__inner">
+											<h3>{actionCard.title}</h3>
+											<div>{actionCard.desc}</div>
+										</div>
+										<a href={actionCard.anchorLink} class="text-white text-base font-medium text-center inline-flex items-center justify-center bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 rounded-lg px-9 py-3">
+											{actionCard.anchorText}
+										</a>
+									</div>
+								</div>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
