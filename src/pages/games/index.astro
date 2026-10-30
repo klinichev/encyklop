@@ -9,7 +9,7 @@ const actionCards = [{
 	title: 'Что ближе к Парижу: Рим или Барселона?',
 	desc: 'Проверка ориентации в пространстве',
 	anchorText: 'Играть',
-	anchorLink: '/games/distance',
+	anchorLink: '/games/distance/',
 	image: '/gamepics/photo-1606225278453-eba097f60fc3.avif'
 },
 {
@@ -17,7 +17,7 @@ const actionCards = [{
 	title: 'Сколько времени в Токио?',
 	desc: 'Игра на знание часовых поясов',
 	anchorText: 'Играть',
-	anchorLink: '/games/time-zones',
+	anchorLink: '/games/time-zones/',
 	image: '/gamepics/photo-1508962914676-134849a727f0.avif'
 }];
 ---
@@ -27,7 +27,8 @@ const actionCards = [{
 	<head>
 		<BaseHead 
 			title="Географические игры" 
-			description="Небольшая коллекция онлайн-игр на географические темы" 
+			description="Небольшая коллекция онлайн-игр на географические темы"
+			schema={{ "@type": "CollectionPage" }}
 		/>
 		<style>
 			main {

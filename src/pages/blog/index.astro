@@ -17,6 +17,7 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 		<BaseHead 
 			title="Заметки" 
 			description="Тексты и фотографии из моих путешествий. Обзор достопримечательностей, экскурс в историю, анализ архитектурных и лингвистических многоходовочек"
+			schema={{ "@type": "CollectionPage" }}
 		/>
 		<style>
 			main {

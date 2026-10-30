@@ -2,34 +2,38 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE, AUTHOR } from '../consts';
 
 interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	schema?: Record<string, unknown>;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/social-image.jpg' } = Astro.props;
+const { title, description, image = '/social-image.jpg', schema } = Astro.props;
 const appliedTitle = (title === SITE_TITLE) ? title : `${title} | ${SITE_TITLE}`;
 
 const imageURL = new URL(image, Astro.url);
-const type = (title === SITE_TITLE || !canonicalURL.href.includes('/blog')) ? "WebSite" : "Article";
+const pageSchema = (title === SITE_TITLE)
+	? { "@type": "WebSite", alternateName: "Encyklop", author: AUTHOR }
+	: { "@type": "WebPage", isPartOf: { "@type": "WebSite", name: SITE_TITLE, url: Astro.site } };
 
 const structuredData = {
 	"@context": "https://schema.org",
-	"@type": type,
 	name: appliedTitle,
-	headline: appliedTitle,
 	description: description,
 	url: canonicalURL,
+	inLanguage: "ru",
 	thumbnailUrl: imageURL,
 	image: {
 		"@type": "ImageObject",
 		url: imageURL,
 	},
+	...pageSchema,
+	...schema,
 };
 ---
 
@@ -40,6 +44,7 @@ const structuredData = {
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <meta name="generator" content={Astro.generator} />
 <link rel="sitemap" href="/sitemap-index.xml" />
+<link rel="alternate" type="application/rss+xml" title={SITE_TITLE} href="/rss.xml" />
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />

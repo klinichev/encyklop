@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import { AUTHOR } from '../consts';
 
 const heroImage = {
 	src: "/images/me.jpg",
@@ -13,6 +14,7 @@ const heroImage = {
 	title="Об авторе"
 	description="Меня зовут Арсений Клиничев, я могу быть вам известен как мозг и голос канала Энциклоп. А этот сайт — мой цифровой сад и игровая площадка!"
 	heroImage={heroImage}
+	schema={{ "@type": "ProfilePage", mainEntity: AUTHOR }}
 >
 	<p>
 		Меня зовут Арсений Клиничев, я могу быть вам известен как мозг и голос канала 

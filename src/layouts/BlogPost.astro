@@ -8,15 +8,25 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 import { Lightbulb, RefreshCw } from 'lucide-react';
 import Status from '../components/Status.astro';
+import { AUTHOR } from '../consts';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { schema?: Record<string, unknown> };
 
-const { title, description, pubDate, updatedDate, heroImage, status } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, status, schema } = Astro.props;
+
+const postSchema = {
+	"@type": "BlogPosting",
+	headline: title,
+	mainEntityOfPage: new URL(Astro.url.pathname, Astro.site),
+	author: AUTHOR,
+	datePublished: pubDate?.toISOString(),
+	dateModified: (updatedDate ?? pubDate)?.toISOString(),
+};
 ---
 
 <html lang="ru">
 	<head>
-		<BaseHead title={title} description={description} image={heroImage.src} />
+		<BaseHead title={title} description={description} image={heroImage.src} schema={schema ?? postSchema} />
 		<style>
 			main {
 				width: calc(100% - 2em);

@@ -3,12 +3,14 @@ import Layout from '../../../layouts/Layout.astro';
 import DistanceGame from '../../../components/DistanceGame';
 import './leaflet.css';
 import './index.css';
+import { WEB_APP_SCHEMA } from '../../../consts';
 ---
 
 <Layout 
   title="Расстояния"
   description="Что ближе к Парижу: Рим или Барселона? Проверь своё чувство расстояния!"
   image="https://images.unsplash.com/photo-1606225278453-eba097f60fc3?auto=format&fit=crop&q=60&w=1200"
+  schema={{ ...WEB_APP_SCHEMA, name: 'Расстояния', applicationCategory: 'GameApplication' }}
 >
   <DistanceGame client:load client:only />
 </Layout>

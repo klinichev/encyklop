@@ -2,11 +2,13 @@
 import Layout from '../../../layouts/Layout.astro';
 import GeoLines from '../../../components/GeoLines';
 import 'leaflet/dist/leaflet.css';
+import { WEB_APP_SCHEMA } from '../../../consts';
 ---
 
 <Layout
   title="Гео-линейка"
   description="Нарисуйте на карте мира линию широты, линию долготы или окружность нужного радиуса вокруг любой точки"
+  schema={{ ...WEB_APP_SCHEMA, name: 'Гео-линейка', applicationCategory: 'UtilitiesApplication' }}
 >
   <section class="text-center mb-8">
     <h1 class="font-display mb-2">Гео-линейка</h1>
