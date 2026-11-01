@@ -83,7 +83,10 @@ const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.ra
 	</head>
 	<body>
 		<Header />
-		<main>
+		<main class="min-[721px]:pt-8">
+			<section class="text-center mb-8">
+				<h1 class="font-display">Заметки</h1>
+			</section>
 			<section>
 				<ul>
 					{

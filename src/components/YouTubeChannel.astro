@@ -1,0 +1,145 @@
+---
+import { Picture } from 'astro:assets';
+import type { YouTubeChannel } from '../lib/youtube';
+
+interface Props {
+	channel: YouTubeChannel;
+}
+
+const { channel } = Astro.props;
+---
+
+<section class="channel">
+	<a class="channel__header" href={channel.url} target="_blank">
+		<Picture
+			src={channel.avatar.url}
+			width={72}
+			height={72}
+			alt=""
+			densities={[2]}
+		/>
+		<div>
+			<h2>{channel.title}</h2>
+			<p>{channel.handle} • {channel.subscribers}</p>
+		</div>
+	</a>
+	<ul>
+		{
+			channel.videos.map((video) => (
+				<li>
+					<a href={video.url} target="_blank">
+						<div class="video__thumbnail">
+							<Picture
+								src={video.thumbnail.url}
+								width={video.thumbnail.width}
+								height={video.thumbnail.height}
+								widths={[320, 640]}
+								sizes="(max-width: 480px) 100vw, (max-width: 720px) 50vw, 230px"
+								alt=""
+							/>
+							<span>{video.duration}</span>
+						</div>
+						<h3 title={video.title}>{video.title}</h3>
+						<p>{video.views}</p>
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</section>
+
+<style>
+	.channel:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	p {
+		margin: 0;
+		color: rgb(var(--gray));
+		font-size: 0.875rem;
+		line-height: 1.4;
+	}
+	.channel__header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	.channel__header picture {
+		flex-shrink: 0;
+	}
+	.channel__header :global(img) {
+		width: 72px;
+		height: 72px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	h2 {
+		margin-bottom: 0.25rem;
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	.channel__header:hover h2,
+	li a:hover h3 {
+		color: var(--accent);
+	}
+	ul {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1.5rem 1rem;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.video__thumbnail {
+		position: relative;
+		margin-bottom: 0.75rem;
+	}
+	.video__thumbnail picture {
+		display: block;
+	}
+	/* У части превью YouTube есть чёрные полосы сверху и снизу: обрезка по 16:9 их убирает */
+	.video__thumbnail :global(img) {
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		border-radius: 12px;
+		object-fit: cover;
+	}
+	.video__thumbnail span {
+		position: absolute;
+		right: 6px;
+		bottom: 6px;
+		padding: 1px 4px;
+		border-radius: 4px;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+		font-size: 0.75rem;
+		font-weight: 500;
+		line-height: 1.5;
+	}
+	h3 {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+		margin-bottom: 0.25rem;
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: 1.35;
+		transition: color 200ms ease-in-out;
+	}
+	@media (max-width: 720px) {
+		ul {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (max-width: 480px) {
+		ul {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

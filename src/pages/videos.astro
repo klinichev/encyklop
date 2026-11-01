@@ -2,41 +2,33 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import YouTubeChannel from '../components/YouTubeChannel.astro';
+import { getChannel } from '../lib/youtube';
 
-// import { getCollection } from 'astro:content';
-// import FormattedDate from '../components/FormattedDate.astro';
-
-// const posts = (await getCollection('blog')).map(value => ({ value, sort: Math.random() }))
-//     .sort((a, b) => a.sort - b.sort)
-//     .map(({ value }) => value);
+const channels = await Promise.all([
+	getChannel('@encyklop', 'videos'),
+	getChannel('@a_klinichev', 'streams'),
+]);
 ---
 
 <!doctype html>
 <html lang="ru">
 	<head>
-		<BaseHead title="Видео" description="Видео с канала Энциклоп и с канала Арсений Клиничев. В основном про языки, но иногда ещё и про историю с географией" />
+		<BaseHead title="Видео" description="Видео с канала Энциклоп и стримы с канала Энциклоп (стримы и личное). В основном про языки, но иногда ещё и про историю с географией" />
 		<style>
 			main {
 				width: 960px;
 				max-width: calc(100% - 2em);
 			}
-			img {
-				width: 100%;
-				display: block;
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-				aspect-ratio: 2;
-				object-fit: cover;
-			}
 		</style>
 	</head>
 	<body>
 		<Header />
-		<main>
-			<section>
-                <img alt="Идут работы" src="/work-in-progress.jpg" />
-				<h2 class="text-center">Скоро тут всё будет, пока идут работы</h2>
+		<main class="min-[721px]:pt-8">
+			<section class="text-center mb-8">
+				<h1 class="font-display">Видео</h1>
 			</section>
+			{channels.map((channel) => channel && <YouTubeChannel channel={channel} />)}
 		</main>
 		<Footer />
 	</body>

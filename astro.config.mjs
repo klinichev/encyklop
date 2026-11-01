@@ -21,6 +21,10 @@ const blogLastmod = Object.fromEntries(
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://encyklop.com',
+	image: {
+		// Превью видео и аватары каналов для страницы «Видео»
+		domains: ['i.ytimg.com', 'yt3.ggpht.com', 'yt3.googleusercontent.com'],
+	},
 	integrations: [tailwind(), react(), mdx(), sitemap({
 		serialize(item) {
 			const slug = item.url.match(/\/blog\/([^/]+)\/$/)?.[1];
