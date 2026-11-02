@@ -1,0 +1,23 @@
+[
+  { "vassal": "serbia", "suzerain": "byz", "from": 1180, "to": 1183 },
+  { "vassal": "serbia", "suzerain": "byz", "from": 1190, "to": 1196 },
+  { "vassal": "bosnia", "suzerain": "byz", "from": 1180, "to": 1181 },
+  { "vassal": "bosnia", "suzerain": "hungary", "from": 1181, "to": 1261 },
+  { "vassal": "croatia", "suzerain": "hungary", "from": 1180, "to": 1261 },
+  { "vassal": "cephalonia", "suzerain": "sicily", "from": 1194, "to": 1209 },
+  { "vassal": "cephalonia", "suzerain": "venice", "from": 1209, "to": 1236 },
+  { "vassal": "cephalonia", "suzerain": "achaea", "from": 1236, "to": 1261 },
+  { "vassal": "thess_kingdom", "suzerain": "latin", "from": 1204, "to": 1224 },
+  { "vassal": "athens", "suzerain": "thess_kingdom", "from": 1204, "to": 1224 },
+  { "vassal": "athens", "suzerain": "achaea", "from": 1224, "to": 1261 },
+  { "vassal": "achaea", "suzerain": "latin", "from": 1209, "to": 1261 },
+  { "vassal": "negroponte", "suzerain": "thess_kingdom", "from": 1205, "to": 1209 },
+  { "vassal": "negroponte", "suzerain": "venice", "from": 1209, "to": 1261 },
+  { "vassal": "naxos", "suzerain": "latin", "from": 1207, "to": 1248 },
+  { "vassal": "naxos", "suzerain": "achaea", "from": 1248, "to": 1261 },
+  { "vassal": "branas", "suzerain": "latin", "from": 1206, "to": 1225 },
+  { "vassal": "slav", "suzerain": "latin", "from": 1208, "to": 1230 },
+  { "vassal": "gabalas", "suzerain": "nicaea", "from": 1233, "to": 1250 },
+  { "vassal": "thess_empire", "suzerain": "bulgaria", "from": 1230, "to": 1241 },
+  { "vassal": "bulgaria", "suzerain": "horde", "from": 1242, "to": 1261 }
+]

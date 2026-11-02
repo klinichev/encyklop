@@ -1,0 +1,2139 @@
+{
+  "entities": [
+    {
+      "id": "byz",
+      "color": "#8e3f73",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Византийская империя"
+        }
+      ],
+      "to": 1204
+    },
+    {
+      "id": "latin",
+      "color": "#c9a227",
+      "names": [
+        {
+          "from": 1204,
+          "name": "Латинская империя"
+        }
+      ]
+    },
+    {
+      "id": "nicaea",
+      "color": "#b0568f",
+      "names": [
+        {
+          "from": 1204,
+          "name": "Никейская империя"
+        }
+      ]
+    },
+    {
+      "id": "thess_kingdom",
+      "color": "#d8ca63",
+      "names": [
+        {
+          "from": 1204,
+          "name": "Королевство Фессалоника"
+        }
+      ],
+      "to": 1224
+    },
+    {
+      "id": "thess_empire",
+      "color": "#6f5aa8",
+      "names": [
+        {
+          "from": 1224,
+          "name": "Фессалоникийская империя"
+        }
+      ],
+      "to": 1246
+    },
+    {
+      "id": "epirus",
+      "color": "#8678c4",
+      "names": [
+        {
+          "from": 1205,
+          "name": "Эпирский деспотат"
+        }
+      ]
+    },
+    {
+      "id": "achaea",
+      "color": "#e3b95a",
+      "names": [
+        {
+          "from": 1205,
+          "name": "Ахейское княжество"
+        }
+      ]
+    },
+    {
+      "id": "athens",
+      "color": "#d39a3f",
+      "names": [
+        {
+          "from": 1204,
+          "name": "Афинское сеньорство"
+        }
+      ]
+    },
+    {
+      "id": "negroponte",
+      "color": "#ecdf9c",
+      "names": [
+        {
+          "from": 1205,
+          "name": "Негропонт"
+        }
+      ]
+    },
+    {
+      "id": "naxos",
+      "color": "#d6c677",
+      "names": [
+        {
+          "from": 1207,
+          "name": "Герцогство Наксос"
+        }
+      ]
+    },
+    {
+      "id": "cephalonia",
+      "color": "#a9c2d1",
+      "names": [
+        {
+          "from": 1194,
+          "name": "Пфальцграфство Кефалиния"
+        }
+      ]
+    },
+    {
+      "id": "venice",
+      "color": "#2e8a84",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Венецианская республика"
+        }
+      ]
+    },
+    {
+      "id": "genoa",
+      "color": "#d9716b",
+      "names": [
+        {
+          "from": 1206,
+          "name": "Генуэзцы"
+        }
+      ]
+    },
+    {
+      "id": "sicily",
+      "color": "#6cae9d",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Сицилийское королевство"
+        }
+      ]
+    },
+    {
+      "id": "bulgaria",
+      "color": "#5a9a48",
+      "names": [
+        {
+          "from": 1186,
+          "name": "Второе Болгарское царство"
+        }
+      ]
+    },
+    {
+      "id": "prosek",
+      "color": "#a2c98a",
+      "names": [
+        {
+          "from": 1197,
+          "name": "Княжество Просек"
+        }
+      ]
+    },
+    {
+      "id": "slav",
+      "color": "#7fb6a0",
+      "names": [
+        {
+          "from": 1208,
+          "name": "Деспотство Алексия Слава"
+        }
+      ]
+    },
+    {
+      "id": "serbia",
+      "color": "#b5473c",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Рашка"
+        },
+        {
+          "from": 1217,
+          "name": "Королевство Сербия"
+        }
+      ]
+    },
+    {
+      "id": "hungary",
+      "color": "#d27f35",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Королевство Венгрия"
+        }
+      ]
+    },
+    {
+      "id": "croatia",
+      "color": "#e3a873",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Королевство Хорватия"
+        }
+      ]
+    },
+    {
+      "id": "bosnia",
+      "color": "#5e86bd",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Банат Босния"
+        }
+      ]
+    },
+    {
+      "id": "arbanon",
+      "color": "#b5796a",
+      "names": [
+        {
+          "from": 1190,
+          "name": "Княжество Арбанон"
+        }
+      ]
+    },
+    {
+      "id": "cumans",
+      "color": "#b3a77e",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Половцы"
+        }
+      ]
+    },
+    {
+      "id": "horde",
+      "color": "#8b7a57",
+      "names": [
+        {
+          "from": 1242,
+          "name": "Улус Джучи"
+        }
+      ]
+    },
+    {
+      "id": "branas",
+      "color": "#b8a3cc",
+      "names": [
+        {
+          "from": 1206,
+          "name": "Владения Феодора Враны"
+        }
+      ]
+    },
+    {
+      "id": "gabalas",
+      "color": "#cfa0c6",
+      "names": [
+        {
+          "from": 1204,
+          "name": "Родос Льва Гавалы"
+        }
+      ]
+    },
+    {
+      "id": "sgouros",
+      "color": "#a78fb5",
+      "names": [
+        {
+          "from": 1204,
+          "name": "Владения Льва Сгура"
+        }
+      ]
+    },
+    {
+      "id": "archons",
+      "color": "#bfa6b6",
+      "names": [
+        {
+          "from": 1204,
+          "name": "Местные греческие архонты"
+        }
+      ]
+    },
+    {
+      "id": "istria",
+      "color": "#9db38a",
+      "names": [
+        {
+          "from": 1180,
+          "name": "Маркграфство Истрия"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "year": 1180,
+      "note": "Смерть Мануила I Комнина: Византия контролирует почти весь полуостров",
+      "confidence": "medium",
+      "changes": {
+        "byz": [
+          "patras",
+          "aigio",
+          "kalavryta",
+          "andravida",
+          "olympia",
+          "hydra",
+          "corinth",
+          "argos",
+          "nafplio",
+          "troezen",
+          "tripoli",
+          "kythera",
+          "sparta",
+          "monemvasia",
+          "mani",
+          "leonidio",
+          "karytaina",
+          "kalamata",
+          "methoni",
+          "koroni",
+          "kyparissia",
+          "amfissa",
+          "livadia",
+          "thebes",
+          "athens",
+          "megara",
+          "aegina",
+          "atalanti",
+          "skiathos",
+          "skopelos",
+          "alonissos",
+          "skyros",
+          "chalcis",
+          "istiaia",
+          "karystos",
+          "kymi",
+          "lamia",
+          "ypati",
+          "domokos",
+          "larissa",
+          "trikala",
+          "karditsa",
+          "volos",
+          "farsala",
+          "elassona",
+          "lefkada",
+          "vonitsa",
+          "agrinio",
+          "nafpaktos",
+          "amfilochia",
+          "karpenisi",
+          "butrint",
+          "gjirokaster",
+          "permet",
+          "thesprotia",
+          "ioannina",
+          "arta",
+          "preveza",
+          "konitsa",
+          "metsovo",
+          "corfu",
+          "paxos",
+          "kefalonia",
+          "ithaca",
+          "zakynthos",
+          "andros",
+          "tinos",
+          "mykonos",
+          "syros",
+          "kea",
+          "kythnos",
+          "serifos",
+          "sifnos",
+          "milos",
+          "folegandros",
+          "ios",
+          "paros",
+          "naxos",
+          "amorgos",
+          "santorini",
+          "anafi",
+          "astypalaia",
+          "patmos",
+          "kissamos",
+          "chania",
+          "rethymno",
+          "heraklion",
+          "gortyn",
+          "lasithi",
+          "sitia",
+          "kos",
+          "nisyros",
+          "tilos",
+          "symi",
+          "rhodes",
+          "lindos",
+          "karpathos",
+          "kasos",
+          "lemnos",
+          "methymna",
+          "mytilene",
+          "chios",
+          "samos",
+          "ikaria",
+          "kitros",
+          "thessaloniki",
+          "kilkis",
+          "kassandra",
+          "polygyros",
+          "sithonia",
+          "athos",
+          "grevena",
+          "kastoria",
+          "kozani",
+          "veria",
+          "edessa",
+          "korce",
+          "florina",
+          "ohrid",
+          "prilep",
+          "bitola",
+          "kavadarci",
+          "vranje",
+          "skopje",
+          "tetovo",
+          "kumanovo",
+          "kriva_palanka",
+          "veles",
+          "razlog",
+          "sandanski",
+          "stip",
+          "strumica",
+          "gevgelija",
+          "serres",
+          "drama",
+          "kavala",
+          "melnik",
+          "asenovgrad",
+          "smolyan",
+          "velingrad",
+          "kardzhali",
+          "xanthi",
+          "komotini",
+          "alexandroupoli",
+          "thasos",
+          "samothrace",
+          "didymoteicho",
+          "svilengrad",
+          "elhovo",
+          "malko_tarnovo",
+          "edirne",
+          "kirklareli",
+          "uzunkopru",
+          "midye",
+          "silivri",
+          "istanbul",
+          "vize",
+          "corlu",
+          "tekirdag",
+          "luleburgaz",
+          "feres",
+          "imbros",
+          "kesan",
+          "enez",
+          "malkara",
+          "gelibolu",
+          "stara_zagora",
+          "karlovo",
+          "plovdiv",
+          "pazardzhik",
+          "haskovo",
+          "sofia",
+          "radomir",
+          "kyustendil",
+          "samokov",
+          "vratsa",
+          "montana",
+          "vidin",
+          "lom",
+          "negotin",
+          "zajecar",
+          "tarnovo",
+          "gabrovo",
+          "kazanlak",
+          "oryahovo",
+          "pleven",
+          "lovech",
+          "nikopol",
+          "svishtov",
+          "razgrad",
+          "preslav",
+          "shumen",
+          "yambol",
+          "sliven",
+          "karnobat",
+          "dobrich",
+          "varna",
+          "provadia",
+          "nesebar",
+          "sozopol",
+          "tulcea",
+          "constanta",
+          "harsova",
+          "mangalia",
+          "babadag",
+          "macin",
+          "sulina",
+          "ruse",
+          "silistra",
+          "pirot",
+          "knjazevac",
+          "nis",
+          "leskovac",
+          "krusevac",
+          "prokuplje",
+          "kostolac",
+          "kucevo",
+          "kladovo",
+          "cuprija",
+          "kragujevac",
+          "belgrade",
+          "smederevo",
+          "valjevo",
+          "sabac",
+          "pec",
+          "prizren",
+          "lipljan",
+          "zvecan",
+          "gnjilane",
+          "kotor",
+          "budva",
+          "bar",
+          "ulcinj",
+          "shkoder",
+          "podgorica",
+          "niksic",
+          "dubrovnik",
+          "kruje",
+          "durres",
+          "elbasan",
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar",
+          "berat",
+          "fier",
+          "vlore",
+          "himare",
+          "nin",
+          "biograd",
+          "knin",
+          "sibenik",
+          "trogir",
+          "split",
+          "omis",
+          "makarska",
+          "solta",
+          "brac",
+          "hvar",
+          "vis",
+          "korcula",
+          "lastovo",
+          "imotski",
+          "duvno",
+          "sinj",
+          "livno",
+          "glamoc",
+          "sremska_mitrovica",
+          "petrovaradin",
+          "tenedos",
+          "erdek",
+          "lapseki",
+          "canakkale",
+          "ezine",
+          "edremit",
+          "balikesir",
+          "kadikoy",
+          "izmit",
+          "iznik",
+          "bursa",
+          "ulubat",
+          "bilecik",
+          "bergama",
+          "akhisar",
+          "izmir",
+          "manisa",
+          "cesme",
+          "sart",
+          "alasehir",
+          "selcuk",
+          "aydin",
+          "usak",
+          "leros",
+          "kalymnos",
+          "balat",
+          "milas",
+          "bodrum",
+          "mugla",
+          "denizli",
+          "datca",
+          "marmaris"
+        ],
+        "serbia": [
+          "ras",
+          "kraljevo",
+          "cacak",
+          "uzice",
+          "pljevlja",
+          "priboj",
+          "bijelo_polje",
+          "foca",
+          "visegrad",
+          "peljesac",
+          "mljet",
+          "opuzen",
+          "konavle",
+          "trebinje",
+          "gacko",
+          "mostar",
+          "ljubuski"
+        ],
+        "bosnia": [
+          "sarajevo",
+          "visoko",
+          "travnik",
+          "jajce",
+          "banja_luka",
+          "konjic",
+          "bugojno",
+          "tuzla",
+          "doboj",
+          "bijeljina",
+          "zvornik"
+        ],
+        "hungary": [
+          "kalocsa",
+          "bac",
+          "subotica",
+          "szeged",
+          "becej",
+          "cenad",
+          "arad",
+          "timisoara",
+          "kovin",
+          "caransebes",
+          "somogy",
+          "pecs",
+          "szekszard",
+          "esztergom",
+          "buda",
+          "szekesfehervar",
+          "kecskemet",
+          "szolnok",
+          "nograd",
+          "nitra",
+          "trencin",
+          "veszprem",
+          "sopron",
+          "szombathely",
+          "zalavar",
+          "gyor",
+          "bratislava",
+          "szabolcs",
+          "eger",
+          "miskolc",
+          "kosice",
+          "zvolen",
+          "liptov",
+          "spis",
+          "uzhhorod",
+          "gyula",
+          "debrecen",
+          "oradea",
+          "berehove",
+          "satu_mare",
+          "sighet",
+          "zalau",
+          "dej",
+          "cluj",
+          "alba_iulia",
+          "deva",
+          "sibiu",
+          "brasov",
+          "odorhei",
+          "bistrita",
+          "targu_mures"
+        ],
+        "croatia": [
+          "rijeka",
+          "senj",
+          "cres",
+          "losinj",
+          "krk",
+          "rab",
+          "karlobag",
+          "gospic",
+          "udbina",
+          "bihac",
+          "prijedor",
+          "karlovac",
+          "modrus",
+          "pozega",
+          "virovitica",
+          "slavonski_brod",
+          "osijek",
+          "dakovo",
+          "vukovar",
+          "zagreb",
+          "sisak",
+          "varazdin",
+          "krizevci"
+        ],
+        "venice": [
+          "pag",
+          "zadar",
+          "ugljan",
+          "dugi_otok",
+          "kornat"
+        ],
+        "cumans": [
+          "severin",
+          "targu_jiu",
+          "craiova",
+          "slatina",
+          "ramnicu",
+          "pitesti",
+          "teleorman",
+          "bucharest",
+          "targoviste",
+          "prahova",
+          "ialomita",
+          "buzau",
+          "braila",
+          "galati",
+          "vrancea",
+          "bacau",
+          "iasi",
+          "suceava",
+          "neamt",
+          "botosani",
+          "vaslui",
+          "balti",
+          "chisinau",
+          "orhei",
+          "cahul",
+          "tighina",
+          "cetatea_alba",
+          "kiliya",
+          "bolhrad"
+        ]
+      }
+    },
+    {
+      "year": 1180,
+      "note": "Истрия в составе Священной Римской империи; прибрежные города тяготеют к Венеции",
+      "confidence": "low",
+      "changes": {
+        "istria": [
+          "koper",
+          "pula",
+          "porec",
+          "pazin",
+          "labin"
+        ]
+      }
+    },
+    {
+      "year": 1181,
+      "note": "Бела III возвращает Срем и Далмацию; Задар восстаёт против Венеции",
+      "confidence": "medium",
+      "changes": {
+        "hungary": [
+          "sremska_mitrovica",
+          "petrovaradin"
+        ],
+        "croatia": [
+          "nin",
+          "biograd",
+          "knin",
+          "sibenik",
+          "trogir",
+          "split",
+          "omis",
+          "makarska",
+          "solta",
+          "brac",
+          "hvar",
+          "vis",
+          "korcula",
+          "lastovo",
+          "imotski",
+          "duvno",
+          "sinj",
+          "livno",
+          "glamoc",
+          "pag",
+          "zadar",
+          "ugljan",
+          "dugi_otok",
+          "kornat"
+        ]
+      }
+    },
+    {
+      "year": 1183,
+      "note": "Венгрия и Сербия наступают на Балканах: Белград, Браничево, Ниш",
+      "confidence": "medium",
+      "changes": {
+        "hungary": [
+          "belgrade",
+          "smederevo",
+          "valjevo",
+          "sabac",
+          "kostolac",
+          "kucevo",
+          "kladovo",
+          "cuprija",
+          "kragujevac"
+        ],
+        "serbia": [
+          "pirot",
+          "knjazevac",
+          "nis",
+          "leskovac",
+          "krusevac",
+          "prokuplje"
+        ]
+      }
+    },
+    {
+      "year": 1185,
+      "note": "Норманны в Диррахии и Фессалонике; Венгрия возвращает Белград и Браничево как приданое",
+      "confidence": "medium",
+      "changes": {
+        "sicily": [
+          "kruje",
+          "durres",
+          "elbasan",
+          "corfu",
+          "paxos",
+          "kefalonia",
+          "ithaca",
+          "zakynthos",
+          "kitros",
+          "thessaloniki",
+          "kilkis",
+          "kassandra",
+          "polygyros",
+          "sithonia",
+          "athos"
+        ],
+        "byz": [
+          "belgrade",
+          "smederevo",
+          "valjevo",
+          "sabac",
+          "kostolac",
+          "kucevo",
+          "kladovo",
+          "cuprija",
+          "kragujevac"
+        ]
+      }
+    },
+    {
+      "year": 1186,
+      "note": "Восстание Асеней: начало Второго Болгарского царства. Неманя присоединяет Зету и Косово; норманнов выбивают",
+      "confidence": "medium",
+      "changes": {
+        "bulgaria": [
+          "tarnovo",
+          "gabrovo",
+          "kazanlak",
+          "oryahovo",
+          "pleven",
+          "lovech",
+          "nikopol",
+          "svishtov",
+          "razgrad",
+          "preslav",
+          "shumen",
+          "yambol",
+          "sliven",
+          "karnobat",
+          "ruse",
+          "silistra",
+          "tulcea",
+          "constanta",
+          "harsova",
+          "mangalia",
+          "babadag",
+          "macin",
+          "sulina"
+        ],
+        "serbia": [
+          "kotor",
+          "budva",
+          "bar",
+          "ulcinj",
+          "shkoder",
+          "podgorica",
+          "niksic",
+          "pec",
+          "prizren",
+          "lipljan",
+          "zvecan",
+          "gnjilane",
+          "vranje",
+          "skopje",
+          "tetovo",
+          "kumanovo",
+          "kriva_palanka",
+          "veles"
+        ],
+        "byz": [
+          "kruje",
+          "durres",
+          "elbasan",
+          "kitros",
+          "thessaloniki",
+          "kilkis",
+          "kassandra",
+          "polygyros",
+          "sithonia",
+          "athos"
+        ]
+      }
+    },
+    {
+      "year": 1190,
+      "note": "Мир на Мораве: Сербия возвращает Ниш и Скопье. Прогон во главе Арбанона",
+      "confidence": "medium",
+      "changes": {
+        "byz": [
+          "pirot",
+          "knjazevac",
+          "nis",
+          "leskovac",
+          "krusevac",
+          "prokuplje",
+          "vranje",
+          "skopje",
+          "tetovo",
+          "kumanovo",
+          "kriva_palanka",
+          "veles"
+        ],
+        "arbanon": [
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar"
+        ]
+      }
+    },
+    {
+      "year": 1191,
+      "note": "Византия возвращает Корфу",
+      "confidence": "low",
+      "changes": {
+        "byz": [
+          "corfu",
+          "paxos"
+        ]
+      }
+    },
+    {
+      "year": 1194,
+      "note": "Кефалиния переходит к Орсини",
+      "confidence": "medium",
+      "changes": {
+        "cephalonia": [
+          "kefalonia",
+          "ithaca",
+          "zakynthos"
+        ]
+      }
+    },
+    {
+      "year": 1196,
+      "note": "Болгары занимают Средец и Видин",
+      "confidence": "medium",
+      "changes": {
+        "bulgaria": [
+          "sofia",
+          "radomir",
+          "kyustendil",
+          "samokov",
+          "vratsa",
+          "montana",
+          "vidin",
+          "lom",
+          "negotin",
+          "zajecar"
+        ]
+      }
+    },
+    {
+      "year": 1197,
+      "note": "Добромир Хрис утверждается в Просеке",
+      "confidence": "medium",
+      "changes": {
+        "prosek": [
+          "razlog",
+          "sandanski",
+          "stip",
+          "strumica",
+          "gevgelija"
+        ]
+      }
+    },
+    {
+      "year": 1199,
+      "note": "Просек расширяется на Пелагонию",
+      "confidence": "low",
+      "changes": {
+        "prosek": [
+          "prilep",
+          "bitola",
+          "kavadarci"
+        ]
+      }
+    },
+    {
+      "year": 1201,
+      "note": "Калоян берёт Варну",
+      "confidence": "high",
+      "changes": {
+        "bulgaria": [
+          "dobrich",
+          "varna",
+          "provadia",
+          "nesebar",
+          "sozopol"
+        ]
+      }
+    },
+    {
+      "year": 1202,
+      "note": "Крестоносцы захватывают Задар для Венеции",
+      "confidence": "high",
+      "changes": {
+        "venice": [
+          "pag",
+          "zadar",
+          "ugljan",
+          "dugi_otok",
+          "kornat"
+        ]
+      }
+    },
+    {
+      "year": 1203,
+      "note": "Калоян занимает Скопье, Ниш, Белград, Браничево и Охрид",
+      "confidence": "medium",
+      "changes": {
+        "bulgaria": [
+          "vranje",
+          "skopje",
+          "tetovo",
+          "kumanovo",
+          "kriva_palanka",
+          "veles",
+          "pirot",
+          "knjazevac",
+          "nis",
+          "leskovac",
+          "krusevac",
+          "prokuplje",
+          "belgrade",
+          "smederevo",
+          "valjevo",
+          "sabac",
+          "kostolac",
+          "kucevo",
+          "kladovo",
+          "cuprija",
+          "kragujevac",
+          "korce",
+          "florina",
+          "ohrid",
+          "razlog",
+          "sandanski",
+          "stip",
+          "strumica",
+          "gevgelija",
+          "prilep",
+          "bitola",
+          "kavadarci"
+        ]
+      }
+    },
+    {
+      "year": 1204,
+      "note": "Четвёртый крестовый поход берёт Константинополь: Византия распадается",
+      "confidence": "high",
+      "changes": {
+        "latin": [
+          "midye",
+          "silivri",
+          "istanbul",
+          "kadikoy",
+          "izmit",
+          "vize",
+          "corlu",
+          "tekirdag",
+          "luleburgaz",
+          "feres",
+          "imbros",
+          "kesan",
+          "enez",
+          "malkara",
+          "gelibolu",
+          "didymoteicho",
+          "svilengrad",
+          "elhovo",
+          "malko_tarnovo",
+          "edirne",
+          "kirklareli",
+          "uzunkopru",
+          "stara_zagora",
+          "karlovo",
+          "plovdiv",
+          "pazardzhik",
+          "haskovo",
+          "asenovgrad",
+          "smolyan",
+          "velingrad",
+          "kardzhali",
+          "tenedos",
+          "erdek",
+          "lapseki",
+          "canakkale",
+          "ezine",
+          "edremit",
+          "balikesir",
+          "lemnos",
+          "methymna",
+          "mytilene",
+          "chios",
+          "samos",
+          "ikaria"
+        ],
+        "thess_kingdom": [
+          "kitros",
+          "thessaloniki",
+          "kilkis",
+          "kassandra",
+          "polygyros",
+          "sithonia",
+          "athos",
+          "grevena",
+          "kastoria",
+          "kozani",
+          "veria",
+          "edessa",
+          "serres",
+          "drama",
+          "kavala",
+          "melnik",
+          "lamia",
+          "ypati",
+          "domokos",
+          "larissa",
+          "trikala",
+          "karditsa",
+          "volos",
+          "farsala",
+          "elassona",
+          "xanthi",
+          "komotini",
+          "alexandroupoli",
+          "thasos",
+          "samothrace"
+        ],
+        "nicaea": [
+          "iznik",
+          "bursa",
+          "ulubat",
+          "bilecik"
+        ],
+        "athens": [
+          "amfissa",
+          "livadia",
+          "thebes",
+          "athens",
+          "megara",
+          "aegina",
+          "atalanti"
+        ],
+        "sgouros": [
+          "hydra",
+          "corinth",
+          "argos",
+          "nafplio",
+          "troezen",
+          "tripoli"
+        ],
+        "gabalas": [
+          "kos",
+          "nisyros",
+          "tilos",
+          "symi",
+          "rhodes",
+          "lindos",
+          "karpathos",
+          "kasos"
+        ],
+        "venice": [
+          "kissamos",
+          "chania",
+          "rethymno",
+          "heraklion",
+          "gortyn",
+          "lasithi",
+          "sitia"
+        ],
+        "archons": [
+          "patras",
+          "aigio",
+          "kalavryta",
+          "andravida",
+          "olympia",
+          "kythera",
+          "sparta",
+          "monemvasia",
+          "mani",
+          "leonidio",
+          "karytaina",
+          "kalamata",
+          "methoni",
+          "koroni",
+          "kyparissia",
+          "skiathos",
+          "skopelos",
+          "alonissos",
+          "skyros",
+          "chalcis",
+          "istiaia",
+          "karystos",
+          "kymi",
+          "lefkada",
+          "vonitsa",
+          "agrinio",
+          "nafpaktos",
+          "amfilochia",
+          "karpenisi",
+          "butrint",
+          "gjirokaster",
+          "permet",
+          "thesprotia",
+          "ioannina",
+          "arta",
+          "preveza",
+          "konitsa",
+          "metsovo",
+          "corfu",
+          "paxos",
+          "andros",
+          "tinos",
+          "mykonos",
+          "syros",
+          "kea",
+          "kythnos",
+          "serifos",
+          "sifnos",
+          "milos",
+          "folegandros",
+          "ios",
+          "paros",
+          "naxos",
+          "amorgos",
+          "santorini",
+          "anafi",
+          "astypalaia",
+          "patmos",
+          "dubrovnik",
+          "kruje",
+          "durres",
+          "elbasan",
+          "berat",
+          "fier",
+          "vlore",
+          "himare",
+          "bergama",
+          "akhisar",
+          "izmir",
+          "manisa",
+          "cesme",
+          "sart",
+          "alasehir",
+          "selcuk",
+          "aydin",
+          "usak",
+          "leros",
+          "kalymnos",
+          "balat",
+          "milas",
+          "bodrum",
+          "mugla",
+          "denizli",
+          "datca",
+          "marmaris"
+        ]
+      }
+    },
+    {
+      "year": 1205,
+      "note": "Адрианопольская битва. Складываются Эпир, Ахейское княжество и владения Никеи в Азии; Венеция берёт Диррахий и Рагузу",
+      "confidence": "medium",
+      "changes": {
+        "epirus": [
+          "butrint",
+          "gjirokaster",
+          "permet",
+          "thesprotia",
+          "ioannina",
+          "arta",
+          "preveza",
+          "konitsa",
+          "metsovo",
+          "lefkada",
+          "vonitsa",
+          "agrinio",
+          "nafpaktos",
+          "amfilochia",
+          "karpenisi",
+          "berat",
+          "fier",
+          "vlore",
+          "himare"
+        ],
+        "achaea": [
+          "patras",
+          "aigio",
+          "kalavryta",
+          "andravida",
+          "olympia",
+          "karytaina",
+          "kalamata",
+          "methoni",
+          "koroni",
+          "kyparissia"
+        ],
+        "nicaea": [
+          "bergama",
+          "akhisar",
+          "izmir",
+          "manisa",
+          "cesme",
+          "sart",
+          "alasehir",
+          "selcuk",
+          "aydin",
+          "usak",
+          "leros",
+          "kalymnos",
+          "balat",
+          "milas",
+          "bodrum",
+          "mugla",
+          "denizli",
+          "datca",
+          "marmaris"
+        ],
+        "negroponte": [
+          "skiathos",
+          "skopelos",
+          "alonissos",
+          "skyros",
+          "chalcis",
+          "istiaia",
+          "karystos",
+          "kymi"
+        ],
+        "venice": [
+          "kruje",
+          "durres",
+          "elbasan",
+          "dubrovnik"
+        ],
+        "bulgaria": [
+          "stara_zagora",
+          "karlovo",
+          "plovdiv",
+          "pazardzhik",
+          "haskovo",
+          "didymoteicho",
+          "svilengrad",
+          "elhovo",
+          "malko_tarnovo",
+          "edirne",
+          "kirklareli",
+          "uzunkopru",
+          "asenovgrad",
+          "smolyan",
+          "velingrad",
+          "kardzhali",
+          "serres",
+          "drama",
+          "kavala",
+          "melnik"
+        ]
+      }
+    },
+    {
+      "year": 1206,
+      "note": "Феодор Врана получает Адрианополь от латинян. Генуэзец Пескаторе на Крите",
+      "confidence": "medium",
+      "changes": {
+        "branas": [
+          "didymoteicho",
+          "svilengrad",
+          "elhovo",
+          "malko_tarnovo",
+          "edirne",
+          "kirklareli",
+          "uzunkopru"
+        ],
+        "genoa": [
+          "kissamos",
+          "chania",
+          "rethymno",
+          "heraklion",
+          "gortyn",
+          "lasithi",
+          "sitia"
+        ]
+      }
+    },
+    {
+      "year": 1207,
+      "note": "Санудо основывает герцогство Наксос; Венеция на Корфу; Серры вновь у Фессалоники",
+      "confidence": "medium",
+      "changes": {
+        "naxos": [
+          "andros",
+          "tinos",
+          "mykonos",
+          "syros",
+          "kea",
+          "kythnos",
+          "serifos",
+          "sifnos",
+          "milos",
+          "folegandros",
+          "ios",
+          "paros",
+          "naxos",
+          "amorgos",
+          "santorini",
+          "anafi",
+          "astypalaia",
+          "patmos"
+        ],
+        "venice": [
+          "corfu",
+          "paxos"
+        ],
+        "thess_kingdom": [
+          "serres",
+          "drama",
+          "kavala",
+          "melnik"
+        ]
+      }
+    },
+    {
+      "year": 1208,
+      "note": "Латиняне побеждают при Филиппополе. Алексий Слав в Родопах, Стрез в Просеке",
+      "confidence": "medium",
+      "changes": {
+        "latin": [
+          "stara_zagora",
+          "karlovo",
+          "plovdiv",
+          "pazardzhik",
+          "haskovo"
+        ],
+        "slav": [
+          "asenovgrad",
+          "smolyan",
+          "velingrad",
+          "kardzhali"
+        ],
+        "prosek": [
+          "razlog",
+          "sandanski",
+          "stip",
+          "strumica",
+          "gevgelija",
+          "prilep",
+          "bitola",
+          "kavadarci"
+        ]
+      }
+    },
+    {
+      "year": 1209,
+      "note": "Ахейское княжество занимает Лаконию",
+      "confidence": "low",
+      "changes": {
+        "achaea": [
+          "kythera",
+          "sparta",
+          "monemvasia",
+          "mani",
+          "leonidio"
+        ]
+      }
+    },
+    {
+      "year": 1210,
+      "note": "Смерть Сгура: Коринф и Арголида отходят латинянам",
+      "confidence": "low",
+      "changes": {
+        "athens": [
+          "hydra",
+          "corinth",
+          "argos",
+          "nafplio",
+          "troezen",
+          "tripoli"
+        ]
+      }
+    },
+    {
+      "year": 1212,
+      "note": "Венеция утверждается на Крите",
+      "confidence": "medium",
+      "changes": {
+        "venice": [
+          "kissamos",
+          "chania",
+          "rethymno",
+          "heraklion",
+          "gortyn",
+          "lasithi",
+          "sitia"
+        ]
+      }
+    },
+    {
+      "year": 1213,
+      "note": "Михаил I Эпирский берёт Диррахий",
+      "confidence": "medium",
+      "changes": {
+        "epirus": [
+          "kruje",
+          "durres",
+          "elbasan"
+        ]
+      }
+    },
+    {
+      "year": 1214,
+      "note": "Эпир занимает Корфу; смерть Стреза",
+      "confidence": "medium",
+      "changes": {
+        "epirus": [
+          "corfu",
+          "paxos",
+          "prilep",
+          "bitola",
+          "kavadarci"
+        ],
+        "bulgaria": [
+          "razlog",
+          "sandanski",
+          "stip",
+          "strumica",
+          "gevgelija"
+        ]
+      }
+    },
+    {
+      "year": 1216,
+      "note": "Конец самостоятельного Арбанона",
+      "confidence": "low",
+      "changes": {
+        "epirus": [
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar"
+        ]
+      }
+    },
+    {
+      "year": 1217,
+      "note": "Феодор Комнин Дука занимает Охрид. Сербия становится королевством",
+      "confidence": "low",
+      "changes": {
+        "epirus": [
+          "korce",
+          "florina",
+          "ohrid"
+        ]
+      }
+    },
+    {
+      "year": 1218,
+      "note": "Эпир наступает на Фессалию и Македонию",
+      "confidence": "low",
+      "changes": {
+        "epirus": [
+          "lamia",
+          "ypati",
+          "domokos",
+          "larissa",
+          "trikala",
+          "karditsa",
+          "volos",
+          "farsala",
+          "elassona",
+          "grevena",
+          "kastoria",
+          "kozani",
+          "veria",
+          "edessa"
+        ]
+      }
+    },
+    {
+      "year": 1221,
+      "note": "Эпир берёт Серры",
+      "confidence": "medium",
+      "changes": {
+        "epirus": [
+          "serres",
+          "drama",
+          "kavala",
+          "melnik"
+        ]
+      }
+    },
+    {
+      "year": 1224,
+      "note": "Феодор Комнин Дука берёт Фессалонику и провозглашает себя императором",
+      "confidence": "high",
+      "changes": {
+        "thess_empire": [
+          "kitros",
+          "thessaloniki",
+          "kilkis",
+          "kassandra",
+          "polygyros",
+          "sithonia",
+          "athos",
+          "xanthi",
+          "komotini",
+          "alexandroupoli",
+          "thasos",
+          "samothrace",
+          "grevena",
+          "kastoria",
+          "kozani",
+          "veria",
+          "edessa",
+          "lamia",
+          "ypati",
+          "domokos",
+          "larissa",
+          "trikala",
+          "karditsa",
+          "volos",
+          "farsala",
+          "elassona",
+          "serres",
+          "drama",
+          "kavala",
+          "melnik",
+          "butrint",
+          "gjirokaster",
+          "permet",
+          "thesprotia",
+          "ioannina",
+          "arta",
+          "preveza",
+          "konitsa",
+          "metsovo",
+          "lefkada",
+          "vonitsa",
+          "agrinio",
+          "nafpaktos",
+          "amfilochia",
+          "karpenisi",
+          "berat",
+          "fier",
+          "vlore",
+          "himare",
+          "kruje",
+          "durres",
+          "elbasan",
+          "corfu",
+          "paxos",
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar",
+          "korce",
+          "florina",
+          "ohrid",
+          "prilep",
+          "bitola",
+          "kavadarci"
+        ]
+      }
+    },
+    {
+      "year": 1225,
+      "note": "Никея в Троаде и на Хиосе; Феодор занимает Адрианополь",
+      "confidence": "medium",
+      "changes": {
+        "nicaea": [
+          "tenedos",
+          "erdek",
+          "lapseki",
+          "canakkale",
+          "ezine",
+          "edremit",
+          "balikesir",
+          "lemnos",
+          "methymna",
+          "mytilene",
+          "chios",
+          "samos",
+          "ikaria"
+        ],
+        "thess_empire": [
+          "didymoteicho",
+          "svilengrad",
+          "elhovo",
+          "malko_tarnovo",
+          "edirne",
+          "kirklareli",
+          "uzunkopru"
+        ]
+      }
+    },
+    {
+      "year": 1230,
+      "note": "Битва при Клокотнице: Иван Асень II забирает Фракию, Македонию и Албанию; Фессалоника становится вассалом",
+      "confidence": "high",
+      "changes": {
+        "bulgaria": [
+          "didymoteicho",
+          "svilengrad",
+          "elhovo",
+          "malko_tarnovo",
+          "edirne",
+          "kirklareli",
+          "uzunkopru",
+          "xanthi",
+          "komotini",
+          "alexandroupoli",
+          "thasos",
+          "samothrace",
+          "serres",
+          "drama",
+          "kavala",
+          "melnik",
+          "prilep",
+          "bitola",
+          "kavadarci",
+          "korce",
+          "florina",
+          "ohrid",
+          "kruje",
+          "durres",
+          "elbasan",
+          "berat",
+          "fier",
+          "vlore",
+          "himare",
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar",
+          "stara_zagora",
+          "karlovo",
+          "plovdiv",
+          "pazardzhik",
+          "haskovo",
+          "asenovgrad",
+          "smolyan",
+          "velingrad",
+          "kardzhali"
+        ],
+        "epirus": [
+          "butrint",
+          "gjirokaster",
+          "permet",
+          "thesprotia",
+          "ioannina",
+          "arta",
+          "preveza",
+          "konitsa",
+          "metsovo",
+          "lefkada",
+          "vonitsa",
+          "agrinio",
+          "nafpaktos",
+          "amfilochia",
+          "karpenisi",
+          "corfu",
+          "paxos"
+        ]
+      }
+    },
+    {
+      "year": 1232,
+      "note": "Венгрия возвращает Белград и Браничево",
+      "confidence": "low",
+      "changes": {
+        "hungary": [
+          "belgrade",
+          "smederevo",
+          "valjevo",
+          "sabac",
+          "kostolac",
+          "kucevo",
+          "kladovo",
+          "cuprija",
+          "kragujevac"
+        ]
+      }
+    },
+    {
+      "year": 1233,
+      "note": "Венгрия создаёт Северинский банат",
+      "confidence": "medium",
+      "changes": {
+        "hungary": [
+          "severin",
+          "targu_jiu",
+          "craiova",
+          "slatina",
+          "ramnicu"
+        ]
+      }
+    },
+    {
+      "year": 1235,
+      "note": "Союз Никеи и Болгарии: Никея занимает Галлиполи и Никомедию",
+      "confidence": "medium",
+      "changes": {
+        "nicaea": [
+          "feres",
+          "imbros",
+          "kesan",
+          "enez",
+          "malkara",
+          "gelibolu",
+          "kadikoy",
+          "izmit"
+        ]
+      }
+    },
+    {
+      "year": 1239,
+      "note": "Михаил II Эпирский возвращает Фессалию",
+      "confidence": "low",
+      "changes": {
+        "epirus": [
+          "lamia",
+          "ypati",
+          "domokos",
+          "larissa",
+          "trikala",
+          "karditsa",
+          "volos",
+          "farsala",
+          "elassona"
+        ]
+      }
+    },
+    {
+      "year": 1241,
+      "note": "Смерть Ивана Асеня II: Болгария теряет запад, Эпир продвигается в Албании",
+      "confidence": "low",
+      "changes": {
+        "epirus": [
+          "kruje",
+          "durres",
+          "elbasan",
+          "berat",
+          "fier",
+          "vlore",
+          "himare",
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar",
+          "korce",
+          "florina",
+          "ohrid"
+        ]
+      }
+    },
+    {
+      "year": 1242,
+      "note": "Монгольское нашествие: половецкие степи отходят Улусу Джучи, Болгария платит дань",
+      "confidence": "low",
+      "changes": {
+        "horde": [
+          "pitesti",
+          "teleorman",
+          "bucharest",
+          "targoviste",
+          "prahova",
+          "ialomita",
+          "buzau",
+          "braila",
+          "galati",
+          "vrancea",
+          "bacau",
+          "iasi",
+          "suceava",
+          "neamt",
+          "botosani",
+          "vaslui",
+          "balti",
+          "chisinau",
+          "orhei",
+          "cahul",
+          "tighina",
+          "cetatea_alba",
+          "kiliya",
+          "bolhrad"
+        ]
+      }
+    },
+    {
+      "year": 1246,
+      "note": "Иоанн III Ватац берёт Фессалонику и западную Фракию, Серры, Скопье",
+      "confidence": "high",
+      "changes": {
+        "nicaea": [
+          "kitros",
+          "thessaloniki",
+          "kilkis",
+          "kassandra",
+          "polygyros",
+          "sithonia",
+          "athos",
+          "grevena",
+          "kastoria",
+          "kozani",
+          "veria",
+          "edessa",
+          "serres",
+          "drama",
+          "kavala",
+          "melnik",
+          "asenovgrad",
+          "smolyan",
+          "velingrad",
+          "kardzhali",
+          "xanthi",
+          "komotini",
+          "alexandroupoli",
+          "thasos",
+          "samothrace",
+          "didymoteicho",
+          "svilengrad",
+          "elhovo",
+          "malko_tarnovo",
+          "edirne",
+          "kirklareli",
+          "uzunkopru",
+          "razlog",
+          "sandanski",
+          "stip",
+          "strumica",
+          "gevgelija",
+          "vranje",
+          "skopje",
+          "tetovo",
+          "kumanovo",
+          "kriva_palanka",
+          "veles",
+          "prilep",
+          "bitola",
+          "kavadarci"
+        ]
+      }
+    },
+    {
+      "year": 1247,
+      "note": "Никея выходит к Родосто",
+      "confidence": "low",
+      "changes": {
+        "nicaea": [
+          "vize",
+          "corlu",
+          "tekirdag",
+          "luleburgaz"
+        ]
+      }
+    },
+    {
+      "year": 1250,
+      "note": "Никея закрепляется на Родосе",
+      "confidence": "medium",
+      "changes": {
+        "nicaea": [
+          "kos",
+          "nisyros",
+          "tilos",
+          "symi",
+          "rhodes",
+          "lindos",
+          "karpathos",
+          "kasos"
+        ]
+      }
+    },
+    {
+      "year": 1252,
+      "note": "Договор в Ларисе: Эпир уступает Никее земли в Македонии",
+      "confidence": "medium",
+      "changes": {
+        "nicaea": [
+          "korce",
+          "florina",
+          "ohrid",
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar"
+        ]
+      }
+    },
+    {
+      "year": 1254,
+      "note": "Усора и Соли отходят к венгерскому Мачванскому банату",
+      "confidence": "low",
+      "changes": {
+        "hungary": [
+          "tuzla",
+          "doboj",
+          "bijeljina",
+          "zvornik"
+        ]
+      }
+    },
+    {
+      "year": 1257,
+      "note": "Михаил II Эпирский наступает на Македонию",
+      "confidence": "medium",
+      "changes": {
+        "epirus": [
+          "korce",
+          "florina",
+          "ohrid",
+          "prilep",
+          "bitola",
+          "kavadarci",
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar"
+        ]
+      }
+    },
+    {
+      "year": 1258,
+      "note": "Манфред Сицилийский получает Корфу, Диррахий и Валону",
+      "confidence": "medium",
+      "changes": {
+        "sicily": [
+          "corfu",
+          "paxos",
+          "kruje",
+          "durres",
+          "elbasan",
+          "berat",
+          "fier",
+          "vlore",
+          "himare"
+        ]
+      }
+    },
+    {
+      "year": 1259,
+      "note": "Битва при Пелагонии: Никея громит коалицию Эпира, Ахайи и Манфреда",
+      "confidence": "high",
+      "changes": {
+        "nicaea": [
+          "korce",
+          "florina",
+          "ohrid",
+          "prilep",
+          "bitola",
+          "kavadarci",
+          "lezhe",
+          "burrel",
+          "puke",
+          "kukes",
+          "peshkopi",
+          "mirdite",
+          "debar"
+        ]
+      }
+    }
+  ]
+}

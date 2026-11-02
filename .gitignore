@@ -29,3 +29,6 @@ src/content/blog/sandbox/
 
 # gamepics
 public/gamepics/
+
+# downloaded sources for the history map
+.cache/

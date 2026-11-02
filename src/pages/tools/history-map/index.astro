@@ -1,0 +1,27 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import HistoryMap from '../../../components/HistoryMap';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import '../../../components/HistoryMap/map.css';
+import { WEB_APP_SCHEMA } from '../../../consts';
+---
+
+<Layout
+  title="Историческая карта Балкан"
+  description="Как менялись границы на Балканском полуострове с 1180 по 1260 год"
+  schema={{ ...WEB_APP_SCHEMA, name: 'Историческая карта Балкан', applicationCategory: 'EducationalApplication' }}
+>
+  <section class="text-center mb-6">
+    <h1 class="font-display mb-2">Историческая карта Балкан</h1>
+    <p>Выберите год и нажимайте на провинции</p>
+  </section>
+  <HistoryMap client:only="react" />
+</Layout>
+
+<style>
+  @media (max-width: 440px) {
+    h1 {
+      font-size: 10vw;
+    }
+  }
+</style>

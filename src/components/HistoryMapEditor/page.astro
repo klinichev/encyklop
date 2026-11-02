@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import HistoryMapEditor from './index';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import '../HistoryMap/map.css';
+---
+
+<Layout title="Редактор исторической карты" description="Инструмент разработки: кисть для данных исторической карты">
+  <HistoryMapEditor client:only="react" />
+</Layout>

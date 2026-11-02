@@ -1,0 +1,37 @@
+.history-map-realm {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: center;
+  width: max-content;
+  max-width: 11em;
+  overflow-wrap: normal;
+  word-break: normal;
+  color: #241a14;
+  text-shadow:
+    0 0 3px rgba(255, 255, 255, 0.85),
+    0 0 1px rgba(255, 255, 255, 0.85);
+}
+
+.history-map-city {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.history-map-city-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1f1a17;
+  border: 1px solid #fff;
+  flex: none;
+}
+
+.history-map-city-label {
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+  color: #1f1a17;
+  text-shadow: 0 0 2px #fff, 0 0 2px #fff;
+}
