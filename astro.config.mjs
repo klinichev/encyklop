@@ -9,6 +9,7 @@ import react from "@astrojs/react";
 import { readdirSync, readFileSync } from 'node:fs';
 
 import historyMapEditor from './scripts/history-map/editor-integration.mjs';
+import historyMapReleaseGate from './scripts/history-map/release-gate.mjs';
 
 // Даты правок заметок для sitemap: коллекции в конфиге недоступны, поэтому читаем frontmatter напрямую
 const blogDir = new URL('./src/content/blog/', import.meta.url);
@@ -27,7 +28,7 @@ export default defineConfig({
 		// Превью видео и аватары каналов для страницы «Видео»
 		domains: ['i.ytimg.com', 'yt3.ggpht.com', 'yt3.googleusercontent.com'],
 	},
-	integrations: [tailwind(), react(), mdx(), historyMapEditor(), sitemap({
+	integrations: [tailwind(), react(), mdx(), historyMapEditor(), historyMapReleaseGate(), sitemap({
 		serialize(item) {
 			const slug = item.url.match(/\/blog\/([^/]+)\/$/)?.[1];
 			const lastmod = slug && blogLastmod[slug];
