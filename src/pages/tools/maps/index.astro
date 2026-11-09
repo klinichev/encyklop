@@ -1,0 +1,46 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import ToolCards from '../../../components/ToolCards.astro';
+import { POINT_MAPS_SECTION } from '../../../consts';
+import { getPublishedPointMaps } from '../../../lib/pointMaps';
+
+const cards = (await getPublishedPointMaps()).map(({ id, data }) => ({
+	title: data.title,
+	desc: data.description,
+	anchorText: 'Открыть',
+	anchorLink: `/tools/maps/${id}/`,
+	image: data.cover,
+	credit: data.coverCredit,
+}));
+---
+
+<!doctype html>
+<html lang="ru">
+	<head>
+		<BaseHead title={POINT_MAPS_SECTION.title} description={POINT_MAPS_SECTION.description} image={POINT_MAPS_SECTION.image} schema={{ "@type": "CollectionPage" }} />
+		<style>
+			main {
+				width: 960px;
+			}
+			@media (max-width: 560px) {
+				h1 {
+					font-size: 11vw;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main class="min-[721px]:pt-8">
+			<section class="text-center mb-8">
+				<h1 class="font-display">{POINT_MAPS_SECTION.title}</h1>
+			</section>
+			<section>
+				<ToolCards cards={cards} />
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

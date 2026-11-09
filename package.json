@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "history-map:geometry": "node scripts/history-map/build-provinces.mjs",
-    "history-map:validate": "node scripts/history-map/validate.mjs"
+    "history-map:validate": "node scripts/history-map/validate.mjs",
+    "point-maps:pritzker": "node scripts/point-maps/pritzker/build.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
@@ -39,6 +40,7 @@
     "mapshaper": "^0.6.121",
     "pngjs": "^7.0.0",
     "polygon-clipping": "^0.15.7",
+    "sharp": "^0.34.5",
     "topojson-server": "^3.0.1"
   }
 }

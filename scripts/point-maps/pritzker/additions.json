@@ -1,0 +1,163 @@
+{
+	"$comment": "Постройки, которых нет в Wikidata или у которых там не указан архитектор. Запись с wikidata берёт из Wikidata всё остальное (тип, город, ссылку, фото), lat/lng/name/photo/year её поправляют (year: null убирает год). Запись без wikidata — целиком ручная, ей нужны id, name, lat, lng. photo — имя файла на Wikimedia Commons. source — откуда взяты координаты.",
+	"points": [
+		{
+			"group": "glenn-murcutt",
+			"wikidata": "Q4894670",
+			"source": "Wikidata"
+		},
+		{
+			"group": "glenn-murcutt",
+			"id": "manual-kempsey-museum",
+			"name": "Музей и туристический центр Кемпси",
+			"lat": -31.09651,
+			"lng": 152.83493,
+			"type": "музей",
+			"place": "Кемпси",
+			"country": "Австралия",
+			"photo": "KempseyMuseum01.jpg",
+			"source": "координаты снимка на Commons (File:KempseyMuseum01.jpg), совпадают с OSM node 4351837881"
+		},
+		{
+			"group": "glenn-murcutt",
+			"id": "manual-bowali-visitor-centre",
+			"name": "Визит-центр Бовали",
+			"lat": -12.67501,
+			"lng": 132.81716,
+			"type": "визит-центр",
+			"place": "Национальный парк Какаду",
+			"country": "Австралия",
+			"photo": "Facade Slats Kakadu NP Visitor Centre Glenn Murcutt.jpg",
+			"source": "OSM node 3511903306"
+		},
+		{
+			"group": "glenn-murcutt",
+			"id": "manual-australian-islamic-centre",
+			"name": "Австралийский исламский центр",
+			"lat": -37.84609,
+			"lng": 144.86149,
+			"type": "мечеть",
+			"place": "Мельбурн",
+			"country": "Австралия",
+			"source": "OSM way 438080062"
+		},
+		{
+			"group": "liu-jiakun",
+			"wikidata": "Q30588416",
+			"source": "Wikidata; автор — категория zh.wikipedia «刘家琨设计的建筑»"
+		},
+		{
+			"group": "liu-jiakun",
+			"wikidata": "Q54854431",
+			"name": "West Village",
+			"lat": 30.67377,
+			"lng": 104.00178,
+			"source": "приблизительно: OSM way 587634641 — улица Бэйсэнь-бэйлу, на которой стоит комплекс"
+		},
+		{
+			"group": "liu-jiakun",
+			"wikidata": "Q134175873",
+			"lat": 30.88453,
+			"lng": 103.86712,
+			"source": "OSM way 1192746927"
+		},
+		{
+			"group": "liu-jiakun",
+			"wikidata": "Q97278087",
+			"name": "Музей императорского кирпича в Сучжоу",
+			"lat": 31.36347,
+			"lng": 120.60822,
+			"source": "статья zh.wikipedia «苏州御窑金砖博物馆», совпадает с OSM way 857417501"
+		},
+		{
+			"group": "liu-jiakun",
+			"id": "manual-shuijingfang-museum",
+			"name": "Музей Шуйцзинфан",
+			"lat": 30.64745,
+			"lng": 104.08344,
+			"type": "музей",
+			"place": "Чэнду",
+			"country": "Китай",
+			"source": "OSM way 1356175214"
+		},
+		{
+			"group": "smiljan-radic",
+			"wikidata": "Q6139847",
+			"source": "Wikidata"
+		},
+		{
+			"group": "smiljan-radic",
+			"wikidata": "Q99767422",
+			"name": "Винодельня Viña Vik",
+			"photo": "Bodega y viñedos VIK.jpg",
+			"year": null,
+			"source": "Wikidata; в Wikidata вместо фото логотип, а год — основание виноградника, не постройка винодельни"
+		},
+		{
+			"group": "smiljan-radic",
+			"wikidata": "Q118481035",
+			"source": "Wikidata"
+		},
+		{
+			"group": "smiljan-radic",
+			"id": "manual-restaurante-mestizo",
+			"name": "Ресторан Mestizo",
+			"lat": -33.39421,
+			"lng": -70.60007,
+			"type": "ресторан",
+			"place": "Сантьяго",
+			"country": "Чили",
+			"photo": "Restaurante Mestizo en Parque BIcentenario.jpg",
+			"source": "OSM way 389422311"
+		},
+		{
+			"group": "francis-kere",
+			"wikidata": "Q134108016",
+			"name": "Начальная школа в Гандо",
+			"source": "Wikidata; в Wikidata подпись «elementary school»"
+		},
+		{
+			"group": "francis-kere",
+			"wikidata": "Q121072791",
+			"source": "Wikidata"
+		},
+		{
+			"group": "francis-kere",
+			"id": "manual-lycee-schorge",
+			"name": "Лицей Шорж",
+			"lat": 12.21745,
+			"lng": -2.37848,
+			"type": "школа",
+			"place": "Кудугу",
+			"country": "Буркина-Фасо",
+			"source": "OSM way 529920333"
+		},
+		{
+			"group": "alejandro-aravena",
+			"wikidata": "Q2123265",
+			"source": "Wikidata"
+		},
+		{
+			"group": "alejandro-aravena",
+			"id": "manual-villa-verde",
+			"name": "Жилой квартал Villa Verde",
+			"lat": -35.33476,
+			"lng": -72.42938,
+			"type": "жилой квартал",
+			"place": "Конститусьон",
+			"country": "Чили",
+			"source": "OSM node 4664867799"
+		},
+		{
+			"group": "wang-shu",
+			"id": "manual-xiangshan-campus",
+			"name": "Кампус Сяншань Китайской академии искусств",
+			"lat": 30.1534,
+			"lng": 120.07644,
+			"type": "кампус",
+			"place": "Ханчжоу",
+			"country": "Китай",
+			"source": "приблизительно: станция метро «Кампус Сяншань» у входа в кампус (Wikidata Q18658026)"
+		}
+	]
+}

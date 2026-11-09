@@ -17,6 +17,14 @@ export const AUTHOR = {
 	],
 };
 
+// Подраздел /tools/maps/: карты с метками, по одной на набор данных из src/data/point-maps/
+export const POINT_MAPS_SECTION = {
+	title: 'Тематические карты',
+	description: 'Карты мира с метками на заданную тему: здания, места, события',
+	image: '/images/point-maps/covers/section.webp',
+	imageCredit: 'Roybb95, CC BY-SA 3.0',
+};
+
 export const WEB_APP_SCHEMA = {
 	'@type': 'WebApplication',
 	operatingSystem: 'Any',

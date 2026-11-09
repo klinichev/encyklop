@@ -24,6 +24,13 @@ const blogLastmod = Object.fromEntries(
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://encyklop.com',
+	vite: {
+		// Острова client:only Vite не сканирует при старте и находит их зависимости только на первом
+		// запросе страницы: пересборка зависимостей на лету роняет первую загрузку карты
+		optimizeDeps: {
+			include: ['maplibre-gl', 'lucide-react', 'react', 'react-dom', 'react-dom/client'],
+		},
+	},
 	image: {
 		// Превью видео и аватары каналов для страницы «Видео»
 		domains: ['i.ytimg.com', 'yt3.ggpht.com', 'yt3.googleusercontent.com'],

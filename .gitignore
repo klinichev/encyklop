@@ -32,3 +32,8 @@ public/gamepics/
 
 # downloaded sources for the history map
 .cache/
+
+# фото построек для тематических карт: скачиваются скриптами scripts/point-maps/ (npm run point-maps:pritzker),
+# в git не храним — сайт собирается локально; обложки карточек выбраны вручную и остаются в git
+public/images/point-maps/*
+!public/images/point-maps/covers/
